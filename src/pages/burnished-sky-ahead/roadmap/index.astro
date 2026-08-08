@@ -1,0 +1,50 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import release from "../../../data/release.json";
+---
+
+<SiteLayout
+  title="Roadmap — Burnished Sky Ahead"
+  description="Creator-curated public roadmap for future Burnished Sky Ahead updates."
+  current="roadmap"
+>
+  <div class="page-shell">
+    <header class="page-intro">
+      <p class="eyebrow">Built in public, released for everyone</p>
+      <h1>Roadmap</h1>
+      <p class="lede">Downloads, Store reviews, support messages, and optional Tips help guide a creator-curated roadmap. Reaching a milestone begins development of a future free update.</p>
+    </header>
+    <section class="content-grid">
+      <aside>Release milestones</aside>
+      <div class="prose">
+        <div class="callout">
+          <p>Milestones do not promise a delivery date and do not grant an individual entitlement, vote, or priority response.</p>
+        </div>
+        <div class="milestone-list">
+          {release.milestones.map((milestone) => (
+            <article class="milestone">
+              <div class="milestone-id">{milestone.id}</div>
+              <div>
+                <strong>{milestone.downloads.toLocaleString("en-US")} downloads</strong><br />
+                <span>or US${milestone.supportUsd} in support</span><br />
+                <span class="status-tag">{milestone.status}</span>
+              </div>
+              <div>
+                <h3>{milestone.feature}</h3>
+                <p>A future free update for every user once the feature is designed, tested, and safe to release.</p>
+              </div>
+            </article>
+          ))}
+        </div>
+        <h2>How decisions are made</h2>
+        <p>
+          devjoe sets the milestones and final scope while actively reading Store
+          reviews and messages from supporters. Aggregate progress is updated
+          manually. Supporter names and messages remain private unless the person
+          explicitly approves publication.
+        </p>
+        <p>States move from Locked → Unlocked → In design → In testing → Released.</p>
+      </div>
+    </section>
+  </div>
+</SiteLayout>

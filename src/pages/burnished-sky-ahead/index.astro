@@ -1,0 +1,83 @@
+---
+import InstrumentMark from "../../components/InstrumentMark.astro";
+import SiteLayout from "../../layouts/SiteLayout.astro";
+import release from "../../data/release.json";
+---
+
+<SiteLayout
+  title="Burnished Sky Ahead — Garmin watch face by devjoe"
+  description={release.product.openingSentence}
+  current="product"
+>
+  <div class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Garmin watch face · {release.product.version} preview</p>
+        <h1>Burnished Sky Ahead</h1>
+        <p>{release.product.openingSentence}</p>
+        <div class="action-row">
+          <a class="button primary" href="/burnished-sky-ahead/devices/">View supported devices</a>
+          <a class="button" href="/burnished-sky-ahead/support/">Get support</a>
+          <span class="button disabled" aria-disabled="true">Connect IQ · coming at launch</span>
+        </div>
+      </div>
+      <InstrumentMark />
+    </section>
+
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">A miniature instrument</p>
+        <h2>Clarity first. Character close behind.</h2>
+        <p>
+          Time remains unmistakable. Weather and activity form a restrained
+          hierarchy around it, with warm brass, mineral gray, and moonlit violet
+          accents adapting between day and night.
+        </p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <span class="feature-index">01</span>
+          <h3>The hours ahead</h3>
+          <p>RAIN, SNOW, MIX, or TEMP chooses a 3H, 6H, or 9H horizon from Garmin-cached forecasts.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-index">02</span>
+          <h3>Curated control</h3>
+          <p>Choose an AOD ornament, weather frame, and whether the restrained wake sequence should play.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-index">03</span>
+          <h3>Always-on, redrawn</h3>
+          <p>A separate sparse composition keeps time, current weather, and temperature available at a glance.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section content-grid">
+      <aside>What it shows</aside>
+      <div class="prose">
+        <h2>Useful density, composed.</h2>
+        <ul>
+          <li>Prominent digital time, date, and English weekday.</li>
+          <li>Battery, cached heart rate, calories, and daily steps.</li>
+          <li>Current Garmin weather, temperature, and a concise condition caption.</li>
+          <li>A contextual three-node precipitation or temperature forecast.</li>
+          <li>A purpose-built AMOLED always-on display.</li>
+        </ul>
+        <div class="callout">
+          <p><strong>Missing stays missing.</strong> Unavailable values display as <code>--</code>, <code>WEATHER</code>, or <code>GARMIN WEATHER</code> rather than guessed data.</p>
+        </div>
+        <h2>Personal, not configurable chaos.</h2>
+        <p>
+          Production defaults are Quoted Time, Faceted Seal, and wake animation
+          On. Every option stays within the same information architecture, so a
+          visual preference never compromises the meaning of the dial.
+        </p>
+        <div class="action-row">
+          <a class="button" href="/burnished-sky-ahead/roadmap/">View the public roadmap</a>
+          <a class="button" href="/burnished-sky-ahead/privacy/">Read the privacy notice</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</SiteLayout>

@@ -1,0 +1,46 @@
+name: Bug report
+description: Report a reproducible Burnished Sky Ahead problem
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please do not post precise coordinates, account data, payment details, or private Garmin logs.
+  - type: dropdown
+    id: device
+    attributes:
+      label: Garmin device
+      options:
+        - Forerunner 970
+        - Forerunner 170
+        - Forerunner 70
+        - Forerunner 265
+        - Forerunner 570 42mm
+        - Forerunner 570 47mm
+        - Instinct 3 AMOLED 50mm
+        - Forerunner 265S
+        - Venu 2S
+    validations:
+      required: true
+  - type: input
+    id: firmware
+    attributes:
+      label: Firmware and watch-face version
+      placeholder: "Firmware 6.0.2 · Burnished Sky Ahead 1.0.0"
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: What happened?
+      description: Include expected behavior, visible fallback text, and whether this occurs in active mode, AOD, or both.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: "1. …\n2. …\n3. …"
+    validations:
+      required: true

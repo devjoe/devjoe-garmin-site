@@ -1,0 +1,35 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import release from "../../../data/release.json";
+---
+
+<SiteLayout
+  title="Supported devices — Burnished Sky Ahead"
+  description="Launch devices and verification evidence for Burnished Sky Ahead."
+  current="devices"
+>
+  <div class="page-shell">
+    <header class="page-intro">
+      <p class="eyebrow">Version {release.product.version}</p>
+      <h1>Supported devices</h1>
+      <p class="lede">Every launch target passes its native build and visual family gates. Evidence labels keep physical review distinct from Simulator validation.</p>
+    </header>
+    <section class="content-grid">
+      <aside>{release.devices.length} launch products</aside>
+      <div class="prose">
+        <div class="device-list">
+          {release.devices.map((device) => (
+            <article class="device-row">
+              <p><strong>{device.name}</strong></p>
+              <p class="profile">{device.displayProfile.replace("round-", "").replace("x", " × ")} px</p>
+              <p class:list={["evidence", { physical: device.evidence.includes("physical") }]}>{device.evidence}</p>
+            </article>
+          ))}
+        </div>
+        <div class="callout">
+          <p>Simulator validation is product-specific acceptance evidence, not a claim of hands-on physical testing. Forerunner 970 is the physical reference.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</SiteLayout>

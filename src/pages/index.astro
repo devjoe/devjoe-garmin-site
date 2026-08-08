@@ -1,0 +1,54 @@
+---
+import InstrumentMark from "../components/InstrumentMark.astro";
+import SiteLayout from "../layouts/SiteLayout.astro";
+---
+
+<SiteLayout
+  title="devjoe Garmin — Thoughtful software for the wrist"
+  description="Independent Garmin apps by devjoe, designed with clarity, restraint, and care."
+>
+  <div class="page-shell">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Independent Garmin software</p>
+        <h1>Small surfaces. Considered details.</h1>
+        <p>
+          Quietly distinctive watch experiences that make dense information
+          glanceable, honest, and worth wearing every day.
+        </p>
+        <div class="action-row">
+          <a class="button primary" href="/burnished-sky-ahead/">Discover Burnished Sky Ahead</a>
+          <a class="button" href="/burnished-sky-ahead/support/">Product support</a>
+        </div>
+      </div>
+      <InstrumentMark />
+    </section>
+    <section class="section">
+      <div class="section-heading">
+        <p class="eyebrow">First release</p>
+        <h2>Burnished Sky Ahead</h2>
+        <p>
+          A refined watch face for time, weather, and the hours ahead—built for
+          selected round AMOLED Garmin watches.
+        </p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature">
+          <span class="feature-index">01</span>
+          <h3>Weather with context</h3>
+          <p>Three forecast points select the shortest useful horizon instead of filling the dial with noise.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-index">02</span>
+          <h3>Made for AMOLED</h3>
+          <p>A deliberate active composition and a separate low-power display protect clarity in both states.</p>
+        </article>
+        <article class="feature">
+          <span class="feature-index">03</span>
+          <h3>Honest by default</h3>
+          <p>Missing weather or sensor values remain visibly unknown. The watch face never invents data.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</SiteLayout>

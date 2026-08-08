@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-08T10:39:02.232Z",
+  "publisher": "devjoe",
+  "product": {
+    "slug": "burnished-sky-ahead",
+    "name": "Burnished Sky Ahead",
+    "shortName": "Sky Ahead",
+    "version": "1.0.0",
+    "category": "Watch Face",
+    "openingSentence": "A refined watch face for time, weather, and the hours ahead.",
+    "launchLanguages": [
+      "eng"
+    ]
+  },
+  "release": {
+    "stage": "beta-candidate",
+    "changelog": {
+      "version": "1.0.0",
+      "status": "not-yet-released"
+    }
+  },
+  "urls": {
+    "product": "https://garmin.devjoe.app/burnished-sky-ahead/",
+    "support": "https://garmin.devjoe.app/burnished-sky-ahead/support/",
+    "privacy": "https://garmin.devjoe.app/burnished-sky-ahead/privacy/",
+    "roadmap": "https://garmin.devjoe.app/burnished-sky-ahead/roadmap/",
+    "supportEmail": "support@devjoe.app"
+  },
+  "devices": [
+    {
+      "id": "fr970",
+      "name": "Forerunner 970",
+      "displayProfile": "round-454x454",
+      "evidence": "FR970 physical candidate"
+    },
+    {
+      "id": "fr170",
+      "name": "Forerunner 170",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fr70",
+      "name": "Forerunner 70",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fr265",
+      "name": "Forerunner 265",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fr57042mm",
+      "name": "Forerunner 570 42mm",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fr57047mm",
+      "name": "Forerunner 570 47mm",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "instinct3amoled50mm",
+      "name": "Instinct 3 AMOLED 50mm",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fr265s",
+      "name": "Forerunner 265S",
+      "displayProfile": "round-360x360",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "venu2s",
+      "name": "Venu 2S",
+      "displayProfile": "round-360x360",
+      "evidence": "Simulator validated"
+    }
+  ],
+  "settings": [
+    {
+      "id": "aodOrnament",
+      "label": "AOD ornament",
+      "default": "Quoted time",
+      "options": [
+        "Three-rail",
+        "Victory laurel",
+        "Quoted time",
+        "None",
+        "Daily rotation"
+      ]
+    },
+    {
+      "id": "weatherFrame",
+      "label": "Weather frame",
+      "default": "Faceted seal",
+      "options": [
+        "Faceted seal",
+        "Simple circle",
+        "None"
+      ]
+    },
+    {
+      "id": "wakeAnimation",
+      "label": "Wake animation",
+      "default": true,
+      "options": [
+        true,
+        false
+      ]
+    }
+  ],
+  "privacy": {
+    "developerBackend": false,
+    "analytics": false,
+    "advertising": false,
+    "accountRequired": false,
+    "communicationsPermission": false,
+    "transmittedToDeveloper": [],
+    "localSources": [
+      "Garmin cached weather",
+      "cached position for sunrise and sunset calculation",
+      "cached heart rate",
+      "activity data",
+      "application settings"
+    ],
+    "missingDataPolicy": "Show an honest fallback; never invent a value."
+  },
+  "support": {
+    "model": "free-community-supported",
+    "provider": "Ko-fi",
+    "callToAction": "Leave a tip on Ko-fi",
+    "url": null,
+    "individualEntitlement": false,
+    "progressUpdateMode": "manual"
+  },
+  "milestones": [
+    {
+      "id": "M1",
+      "downloads": 5000,
+      "supportUsd": 25,
+      "feature": "Two additional curated palettes",
+      "status": "locked"
+    },
+    {
+      "id": "M2",
+      "downloads": 15000,
+      "supportUsd": 75,
+      "feature": "Curated data panels",
+      "status": "locked"
+    },
+    {
+      "id": "M3",
+      "downloads": 30000,
+      "supportUsd": 150,
+      "feature": "Weather Miniature Motion",
+      "status": "locked"
+    }
+  ],
+  "independence": "Independent developer product; not affiliated with or endorsed by Garmin."
+}

@@ -1,0 +1,21 @@
+name: Feature suggestion
+description: Suggest a future improvement
+title: "[Idea]: "
+labels: [enhancement]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggestions help inform a creator-curated roadmap. They are not individual entitlements or votes.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What would this improve?
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggested direction
+    validations:
+      required: true

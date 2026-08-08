@@ -1,0 +1,74 @@
+---
+import "@fontsource-variable/bodoni-moda";
+import "@fontsource-variable/source-sans-3";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  current?: string;
+}
+
+const { title, description, current = "" } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const navigation = [
+  { href: "/burnished-sky-ahead/", label: "Sky Ahead", id: "product" },
+  { href: "/burnished-sky-ahead/devices/", label: "Devices", id: "devices" },
+  { href: "/burnished-sky-ahead/roadmap/", label: "Roadmap", id: "roadmap" },
+  { href: "/burnished-sky-ahead/support/", label: "Support", id: "support" },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#12100e" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="devjoe Garmin" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="maker" href="/" aria-label="devjoe Garmin home">
+        <span class="maker-mark" aria-hidden="true">d</span>
+        <span>devjoe <em>Garmin</em></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        {navigation.map((item) => (
+          <a href={item.href} aria-current={current === item.id ? "page" : undefined}>
+            {item.label}
+          </a>
+        ))}
+      </nav>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="site-footer">
+      <div>
+        <p class="eyebrow">Independent by design</p>
+        <p>Thoughtful Garmin software by devjoe.</p>
+      </div>
+      <div class="footer-links">
+        <a href="/burnished-sky-ahead/privacy/">Privacy</a>
+        <a href="/known-issues/">Known issues</a>
+        <a href="/changelog/">Changelog</a>
+        <a href="mailto:support@devjoe.app">support@devjoe.app</a>
+      </div>
+      <p class="fine-print">
+        Independent developer products. Garmin and Connect IQ are trademarks of
+        their respective owner. Not affiliated with or endorsed by Garmin.
+      </p>
+    </footer>
+  </body>
+</html>

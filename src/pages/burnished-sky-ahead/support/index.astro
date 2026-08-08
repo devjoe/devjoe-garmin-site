@@ -1,0 +1,67 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+import release from "../../../data/release.json";
+
+const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
+---
+
+<SiteLayout
+  title="Support — Burnished Sky Ahead"
+  description="Troubleshooting, support, and feedback for Burnished Sky Ahead."
+  current="support"
+>
+  <div class="page-shell">
+    <header class="page-intro">
+      <p class="eyebrow">Burnished Sky Ahead</p>
+      <h1>Support</h1>
+      <p class="lede">Start with the quick checks below. If the problem remains, share only the details needed to reproduce it.</p>
+    </header>
+    <section class="content-grid">
+      <aside>Quick checks</aside>
+      <div class="prose">
+        <h2>Weather or location looks stale</h2>
+        <ol>
+          <li>Open Garmin’s Weather app and confirm its current data.</li>
+          <li>Sync Garmin Connect and allow Garmin’s cached weather time to refresh.</li>
+          <li>Confirm the watch face has its requested permissions.</li>
+          <li>Restart the watch if settings or cached data remain stale.</li>
+        </ol>
+        <p>
+          Garmin may omit the observation-location name. Burnished Sky Ahead then
+          shows an approximate one-decimal coordinate when possible, or
+          <code>GARMIN WEATHER</code> when neither source is usable.
+        </p>
+        <h2>Settings</h2>
+        <ul>
+          <li><strong>AOD ornament:</strong> Three-rail, Victory Laurel, Quoted Time, None, or Daily Rotation.</li>
+          <li><strong>Weather frame:</strong> Faceted Seal, Simple Circle, or None.</li>
+          <li><strong>Wake animation:</strong> On or Off.</li>
+        </ul>
+        <h2>Report a problem</h2>
+        <p>
+          Include the device model, firmware, Burnished Sky Ahead version,
+          expected behavior, visible fallback text, and whether it occurs in
+          active mode, AOD, or both.
+        </p>
+        <div class="callout">
+          <p><strong>Keep public reports private-safe.</strong> Do not post precise coordinates, account data, payment details, or private Garmin logs.</p>
+        </div>
+        <div class="action-row">
+          <a class="button primary" href={`${issuesUrl}/new/choose`}>Open a public issue</a>
+          <a class="button" href={`mailto:${release.urls.supportEmail}`}>Email private support</a>
+        </div>
+        <h2>Optional support</h2>
+        <p>
+          Burnished Sky Ahead is free. Optional Tips support future free updates
+          for everyone; they do not purchase an unlock, membership, vote, or
+          priority response.
+        </p>
+        {release.support.url ? (
+          <a class="button" href={release.support.url}>Leave a tip on Ko-fi</a>
+        ) : (
+          <p class="status-tag">Tip link will be published at launch</p>
+        )}
+      </div>
+    </section>
+  </div>
+</SiteLayout>

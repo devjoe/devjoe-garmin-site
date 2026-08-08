@@ -1,0 +1,30 @@
+---
+import SiteLayout from "../../layouts/SiteLayout.astro";
+---
+
+<SiteLayout title="Known issues — devjoe Garmin" description="Known platform boundaries and product issues for Burnished Sky Ahead.">
+  <div class="page-shell">
+    <header class="page-intro">
+      <p class="eyebrow">Transparent boundaries</p>
+      <h1>Known issues</h1>
+      <p class="lede">No confirmed product defects are currently published. These Garmin platform boundaries can affect what appears on the watch.</p>
+    </header>
+    <section class="content-grid">
+      <aside>Platform notes</aside>
+      <div class="prose">
+        <h2>Weather freshness</h2>
+        <p>Weather availability depends on Garmin’s cached data, the paired phone, account setup, permissions, and synchronization.</p>
+        <h2>Location labels</h2>
+        <p>Garmin may omit the observation-location label. Burnished Sky Ahead then shows an approximate coordinate when possible, or <code>GARMIN WEATHER</code>.</p>
+        <h2>Precipitation detail</h2>
+        <p>Garmin supplies one general precipitation chance rather than separate rain and snow probabilities, and does not expose snow accumulation depth here.</p>
+        <h2>Always-on display</h2>
+        <p>Device sleep settings may turn off AOD independently of the watch face’s AOD design.</p>
+        <div class="action-row">
+          <a class="button" href="https://github.com/devjoe/devjoe-garmin-site/issues">Review public issues</a>
+          <a class="button" href="/burnished-sky-ahead/support/">Troubleshooting</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</SiteLayout>

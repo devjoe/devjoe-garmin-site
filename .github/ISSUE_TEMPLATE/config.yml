@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private support
+    url: mailto:support@devjoe.app
+    about: Use email for anything that should not be public.
+  - name: Troubleshooting guide
+    url: https://garmin.devjoe.app/burnished-sky-ahead/support/
+    about: Review common weather, location, and settings checks first.

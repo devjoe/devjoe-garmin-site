@@ -1,0 +1,57 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+---
+
+<SiteLayout
+  title="Privacy — Burnished Sky Ahead"
+  description="Privacy notice for Burnished Sky Ahead by devjoe."
+>
+  <div class="page-shell">
+    <header class="page-intro">
+      <p class="eyebrow">Pre-release notice</p>
+      <h1>Privacy</h1>
+      <p class="lede">Burnished Sky Ahead reads selected Garmin-provided data on the watch. The current release does not send it to devjoe.</p>
+    </header>
+    <section class="content-grid">
+      <aside>Data boundary</aside>
+      <div class="prose">
+        <h2>Data used on the watch</h2>
+        <ul>
+          <li>Local time, date, device settings, battery, and charging state.</li>
+          <li>Daily steps and calories, plus the latest cached heart-rate sample.</li>
+          <li>Garmin-cached current weather and hourly forecasts.</li>
+          <li>An available cached position used to calculate sunrise and sunset.</li>
+          <li>Garmin’s observation-location label when available.</li>
+        </ul>
+        <h2>Processing and transmission</h2>
+        <p>
+          The current release has no Communications permission, developer server,
+          advertising SDK, analytics SDK, account system, or developer telemetry.
+          It does not send the data above to devjoe.
+        </p>
+        <p>
+          When Garmin does not provide a trustworthy location label, the watch
+          face may briefly display Garmin’s approximate one-decimal observation
+          coordinate. Coordinates are not transmitted, serialized, or written to
+          release logs.
+        </p>
+        <h2>Stored preferences</h2>
+        <p>
+          Garmin’s application-properties system stores only the selected AOD
+          ornament, weather-frame style, and wake-animation preference on behalf
+          of the watch face.
+        </p>
+        <h2>External support</h2>
+        <p>
+          The support page may link to GitHub and Ko-fi. Those services have their
+          own privacy terms. The watch face does not send Garmin data, device
+          identifiers, settings, usage history, or Tip status to either service.
+        </p>
+        <div class="callout">
+          <p><strong>Effective date:</strong> This pre-release notice takes effect when Burnished Sky Ahead 1.0.0 is publicly released. The calendar date will be added before Store submission.</p>
+        </div>
+        <p>Questions: <a href="mailto:support@devjoe.app">support@devjoe.app</a></p>
+      </div>
+    </section>
+  </div>
+</SiteLayout>
