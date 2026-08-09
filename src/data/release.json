@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-08T10:39:02.232Z",
+  "generatedAt": "2026-08-09T00:00:00.000Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
@@ -8,7 +8,7 @@
     "shortName": "Sky Ahead",
     "version": "1.0.0",
     "category": "Watch Face",
-    "openingSentence": "A refined watch face for time, weather, and the hours ahead.",
+    "openingSentence": "A refined watch face made for daily life with the Soft Gold Titanium and French Gray Forerunner 970—and adapted with care for selected round AMOLED Garmin watches.",
     "launchLanguages": [
       "eng"
     ]
@@ -117,6 +117,7 @@
     }
   ],
   "privacy": {
+    "effectiveDate": "2026-01-01",
     "developerBackend": false,
     "analytics": false,
     "advertising": false,
@@ -136,7 +137,7 @@
     "model": "free-community-supported",
     "provider": "Ko-fi",
     "callToAction": "Leave a tip on Ko-fi",
-    "url": null,
+    "url": "https://ko-fi.com/devjoe",
     "individualEntitlement": false,
     "progressUpdateMode": "manual"
   },

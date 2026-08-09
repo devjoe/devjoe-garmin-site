@@ -1,5 +1,4 @@
 ---
-import InstrumentMark from "../components/InstrumentMark.astro";
 import SiteLayout from "../layouts/SiteLayout.astro";
 ---
 
@@ -21,15 +20,24 @@ import SiteLayout from "../layouts/SiteLayout.astro";
           <a class="button" href="/burnished-sky-ahead/support/">Product support</a>
         </div>
       </div>
-      <InstrumentMark />
+      <a class="home-product-card" href="/burnished-sky-ahead/" aria-label="Discover Burnished Sky Ahead">
+        <img
+          src="/images/burnished-sky-ahead/01-essentials-at-a-glance.png"
+          alt="Burnished Sky Ahead watch-face composition"
+          width="900"
+          height="900"
+          fetchpriority="high"
+        />
+        <span><strong>Burnished Sky Ahead</strong><small>Time, weather, and the hours ahead</small></span>
+      </a>
     </section>
     <section class="section">
       <div class="section-heading">
         <p class="eyebrow">First release</p>
         <h2>Burnished Sky Ahead</h2>
         <p>
-          A refined watch face for time, weather, and the hours ahead—built for
-          selected round AMOLED Garmin watches.
+          First made for a Soft Gold Titanium and French Gray Forerunner 970,
+          then carefully adapted for selected round AMOLED Garmin watches.
         </p>
       </div>
       <div class="feature-grid">

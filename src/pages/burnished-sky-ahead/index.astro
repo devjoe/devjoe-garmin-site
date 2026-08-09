@@ -1,7 +1,29 @@
 ---
-import InstrumentMark from "../../components/InstrumentMark.astro";
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import release from "../../data/release.json";
+
+const gallery = [
+  {
+    src: "/images/burnished-sky-ahead/02-day-night.png",
+    label: "Day & night",
+    copy: "Coordinated materials shift with the sky while the hierarchy stays familiar.",
+  },
+  {
+    src: "/images/burnished-sky-ahead/03-forecast-ahead.png",
+    label: "Forecast ahead",
+    copy: "A compact three-node instrument chooses a useful precipitation or temperature horizon.",
+  },
+  {
+    src: "/images/burnished-sky-ahead/04-always-on-display.png",
+    label: "Always-on display",
+    copy: "Five restrained ornaments share a purpose-built low-power composition.",
+  },
+  {
+    src: "/images/burnished-sky-ahead/05-weather-frames.png",
+    label: "Weather frames",
+    copy: "Faceted Seal, Simple Circle, or no frame—each keeps weather legible and composed.",
+  },
+];
 ---
 
 <SiteLayout
@@ -10,46 +32,74 @@ import release from "../../data/release.json";
   current="product"
 >
   <div class="page-shell">
-    <section class="hero">
-      <div class="hero-copy">
-        <p class="eyebrow">Garmin watch face · {release.product.version} preview</p>
-        <h1>Burnished Sky Ahead</h1>
-        <p>{release.product.openingSentence}</p>
+    <section class="product-hero">
+      <div class="hero-copy product-hero-copy">
+        <p class="eyebrow">Garmin watch face · {release.product.version} Beta candidate</p>
+        <h1>Burnished<br />Sky Ahead</h1>
+        <p>
+          Made first for my own Soft Gold Titanium and French Gray Forerunner 970:
+          refined, readable, and genuinely useful for the hours ahead.
+        </p>
         <div class="action-row">
           <a class="button primary" href="/burnished-sky-ahead/devices/">View supported devices</a>
           <a class="button" href="/burnished-sky-ahead/support/">Get support</a>
           <span class="button disabled" aria-disabled="true">Connect IQ · coming at launch</span>
         </div>
       </div>
-      <InstrumentMark />
+      <figure class="product-hero-art">
+        <img
+          src="/images/burnished-sky-ahead/hero-1440x720.png"
+          alt="Burnished Sky Ahead active watch face shown on a Soft Gold Titanium and French Gray Garmin watch"
+          width="1440"
+          height="720"
+          fetchpriority="high"
+        />
+        <figcaption>Designed as one composition—from AMOLED black to the physical brass-toned bezel.</figcaption>
+      </figure>
     </section>
 
-    <section class="section">
+    <section class="section product-statement">
       <div class="section-heading">
         <p class="eyebrow">A miniature instrument</p>
-        <h2>Clarity first. Character close behind.</h2>
+        <h2>Clarity first.<br />Character close behind.</h2>
         <p>
           Time remains unmistakable. Weather and activity form a restrained
           hierarchy around it, with warm brass, mineral gray, and moonlit violet
-          accents adapting between day and night.
+          details coordinated across day, night, and always-on states.
         </p>
       </div>
-      <div class="feature-grid">
-        <article class="feature">
-          <span class="feature-index">01</span>
-          <h3>The hours ahead</h3>
-          <p>RAIN, SNOW, MIX, or TEMP chooses a 3H, 6H, or 9H horizon from Garmin-cached forecasts.</p>
-        </article>
-        <article class="feature">
-          <span class="feature-index">02</span>
-          <h3>Curated control</h3>
-          <p>Choose an AOD ornament, weather frame, and whether the restrained wake sequence should play.</p>
-        </article>
-        <article class="feature">
-          <span class="feature-index">03</span>
-          <h3>Always-on, redrawn</h3>
-          <p>A separate sparse composition keeps time, current weather, and temperature available at a glance.</p>
-        </article>
+      <img
+        class="statement-image"
+        src="/images/burnished-sky-ahead/01-essentials-at-a-glance.png"
+        alt="Burnished Sky Ahead composition showing time, activity, date, current weather, and forecast"
+        width="900"
+        height="900"
+        loading="lazy"
+      />
+    </section>
+
+    <section class="section visual-story" aria-labelledby="visual-story-title">
+      <div class="section-heading">
+        <p class="eyebrow">One face, several useful tempos</p>
+        <h2 id="visual-story-title">Weather with context.</h2>
+        <p>
+          The active face, forecast miniature, AOD, and frame options share one
+          visual language instead of behaving like unrelated widgets.
+        </p>
+      </div>
+      <div class="visual-grid">
+        {gallery.map((item, index) => (
+          <article class="visual-card">
+            <img src={item.src} alt={`${item.label} visual for Burnished Sky Ahead`} width="900" height="900" loading="lazy" />
+            <div class="visual-card-copy">
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <div>
+                <h3>{item.label}</h3>
+                <p>{item.copy}</p>
+              </div>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
 
@@ -61,19 +111,36 @@ import release from "../../data/release.json";
           <li>Prominent digital time, date, and English weekday.</li>
           <li>Battery, cached heart rate, calories, and daily steps.</li>
           <li>Current Garmin weather, temperature, and a concise condition caption.</li>
-          <li>A contextual three-node precipitation or temperature forecast.</li>
+          <li>A contextual three-node RAIN, SNOW, MIX, or TEMP forecast.</li>
           <li>A purpose-built AMOLED always-on display.</li>
         </ul>
         <div class="callout">
           <p><strong>Missing stays missing.</strong> Unavailable values display as <code>--</code>, <code>WEATHER</code>, or <code>GARMIN WEATHER</code> rather than guessed data.</p>
         </div>
+
+        <h2>The shortest useful horizon.</h2>
+        <p>
+          The forecast miniature chooses RAIN, SNOW, or MIX at a meaningful 3H,
+          6H, or 9H horizon. When no meaningful precipitation appears within nine
+          hours, it shows actual forecast temperatures through TEMP 6H.
+        </p>
+
         <h2>Personal, not configurable chaos.</h2>
         <p>
           Production defaults are Quoted Time, Faceted Seal, and wake animation
           On. Every option stays within the same information architecture, so a
           visual preference never compromises the meaning of the dial.
         </p>
+
+        <h2>Free for everyone.</h2>
+        <p>
+          Every download and Store review helps the project grow. Optional Tips
+          let me spend more time designing, implementing, and testing features
+          that are released as free updates for the whole community. Tips can
+          accelerate development; they never create private or exclusive features.
+        </p>
         <div class="action-row">
+          <a class="button primary" href={release.support.url}>Support on Ko-fi</a>
           <a class="button" href="/burnished-sky-ahead/roadmap/">View the public roadmap</a>
           <a class="button" href="/burnished-sky-ahead/privacy/">Read the privacy notice</a>
         </div>
