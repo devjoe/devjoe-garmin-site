@@ -54,10 +54,14 @@ const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
         <p>
           Burnished Sky Ahead is free. Optional Tips support future free updates
           for everyone; they do not purchase an unlock, membership, vote, or
-          priority response.
+          priority response. Community support progress is measured as cumulative
+          gross voluntary Tips in USD before platform and payment fees.
         </p>
         {release.support.url ? (
-          <a class="button" href={release.support.url}>Leave a tip on Ko-fi</a>
+          <div class="action-row">
+            <a class="button" href={release.support.url}>Leave a tip on Ko-fi</a>
+            <a class="button" href="/burnished-sky-ahead/roadmap/">View the public roadmap</a>
+          </div>
         ) : (
           <p class="status-tag">Tip link will be published at launch</p>
         )}

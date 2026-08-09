@@ -10,15 +10,15 @@ import release from "../../../data/release.json";
 >
   <div class="page-shell">
     <header class="page-intro">
-      <p class="eyebrow">Built in public, released for everyone</p>
+      <p class="eyebrow">Community-supported, released for everyone</p>
       <h1>Roadmap</h1>
-      <p class="lede">Downloads, Store reviews, support messages, and optional Tips help guide a creator-curated roadmap. Reaching a milestone begins development of a future free update.</p>
+      <p class="lede">Downloads and optional community support can accelerate future free updates. Store reviews and supporter messages help inform the work; devjoe curates the final scope.</p>
     </header>
     <section class="content-grid">
       <aside>Release milestones</aside>
       <div class="prose">
         <div class="callout">
-          <p>Milestones do not promise a delivery date and do not grant an individual entitlement, vote, or priority response.</p>
+          <p><strong>Every milestone is for everyone.</strong> Reaching either target begins development; it does not promise a delivery date or grant an individual unlock, vote, or priority response.</p>
         </div>
         <div class="milestone-list">
           {release.milestones.map((milestone) => (
@@ -26,12 +26,12 @@ import release from "../../../data/release.json";
               <div class="milestone-id">{milestone.id}</div>
               <div>
                 <strong>{milestone.downloads.toLocaleString("en-US")} downloads</strong><br />
-                <span>or US${milestone.supportUsd} in support</span><br />
+                <span>or a US${milestone.supportUsd} community support target</span><br />
                 <span class="status-tag">{milestone.status}</span>
               </div>
               <div>
                 <h3>{milestone.feature}</h3>
-                <p>A future free update for every user once the feature is designed, tested, and safe to release.</p>
+                <p>{milestone.description}</p>
               </div>
             </article>
           ))}
@@ -43,7 +43,11 @@ import release from "../../../data/release.json";
           manually. Supporter names and messages remain private unless the person
           explicitly approves publication.
         </p>
-        <p>States move from Locked → Unlocked → In design → In testing → Released.</p>
+        <p>
+          Support totals are measured as {release.support.progressBasis}.{" "}
+          Aggregate totals are updated manually; last updated <time datetime={release.support.progressLastUpdated}>August 10, 2026</time>.
+        </p>
+        <p>States move from Target not reached → Target reached → In design → In testing → Released.</p>
       </div>
     </section>
   </div>

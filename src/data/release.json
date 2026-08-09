@@ -139,29 +139,34 @@
     "callToAction": "Leave a tip on Ko-fi",
     "url": "https://ko-fi.com/devjoe",
     "individualEntitlement": false,
-    "progressUpdateMode": "manual"
+    "progressUpdateMode": "manual",
+    "progressBasis": "cumulative gross voluntary Tips in USD before platform and payment fees",
+    "progressLastUpdated": "2026-08-10"
   },
   "milestones": [
     {
       "id": "M1",
       "downloads": 5000,
-      "supportUsd": 25,
+      "supportUsd": 50,
       "feature": "Two additional curated palettes",
-      "status": "locked"
+      "description": "Two more carefully tuned colorways, released as a free update for every user.",
+      "status": "Target not reached"
     },
     {
       "id": "M2",
       "downloads": 15000,
-      "supportUsd": 75,
-      "feature": "Curated data panels",
-      "status": "locked"
+      "supportUsd": 200,
+      "feature": "Additional curated data-panel presets",
+      "description": "More considered ways to arrange useful watch data without turning the face into a dashboard.",
+      "status": "Target not reached"
     },
     {
       "id": "M3",
       "downloads": 30000,
-      "supportUsd": 150,
+      "supportUsd": 800,
       "feature": "Weather Miniature Motion",
-      "status": "locked"
+      "description": "Optional, restrained motion limited to the weather region on the active face. AOD remains static.",
+      "status": "Target not reached"
     }
   ],
   "independence": "Independent developer product; not affiliated with or endorsed by Garmin."
