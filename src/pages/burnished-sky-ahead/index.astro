@@ -11,7 +11,7 @@ const gallery = [
   {
     src: "/images/burnished-sky-ahead/03-forecast-ahead.png",
     label: "Forecast ahead",
-    copy: "A compact three-node instrument chooses a useful precipitation or temperature horizon.",
+    copy: "Three actual clock hours make the precipitation or temperature timeline readable at a glance.",
   },
   {
     src: "/images/burnished-sky-ahead/04-always-on-display.png",
@@ -34,7 +34,7 @@ const gallery = [
   <div class="page-shell">
     <section class="product-hero">
       <div class="hero-copy product-hero-copy">
-        <p class="eyebrow">Garmin watch face · {release.product.version} Beta candidate</p>
+        <p class="eyebrow">Garmin watch face · {release.product.version} Production</p>
         <h1>Burnished<br />Sky Ahead</h1>
         <p>
           Made first for my own Soft Gold Titanium and French Gray Forerunner 970:
@@ -43,7 +43,7 @@ const gallery = [
         <div class="action-row">
           <a class="button primary" href="/burnished-sky-ahead/devices/">View supported devices</a>
           <a class="button" href="/burnished-sky-ahead/support/">Get support</a>
-          <span class="button disabled" aria-disabled="true">Connect IQ · coming at launch</span>
+          <a class="button" href={release.urls.store}>View on Connect IQ</a>
         </div>
       </div>
       <figure class="product-hero-art">
@@ -115,14 +115,16 @@ const gallery = [
           <li>A purpose-built AMOLED always-on display.</li>
         </ul>
         <div class="callout">
-          <p><strong>Missing stays missing.</strong> Unavailable values display as <code>--</code>, <code>WEATHER</code>, or <code>GARMIN WEATHER</code> rather than guessed data.</p>
+          <p><strong>Missing stays missing.</strong> Unavailable values display as <code>--</code> or <code>WEATHER</code> rather than guessed data.</p>
         </div>
 
         <h2>The shortest useful horizon.</h2>
         <p>
           The forecast miniature chooses RAIN, SNOW, or MIX at a meaningful 3H,
           6H, or 9H horizon. When no meaningful precipitation appears within nine
-          hours, it shows actual forecast temperatures through TEMP 6H.
+          hours, it shows actual forecast temperatures through TEMP 6H. Each node
+          is labeled with its represented local clock hour, so the timeline can be
+          read without decoding a relative offset.
         </p>
 
         <h2>Personal, not configurable chaos.</h2>

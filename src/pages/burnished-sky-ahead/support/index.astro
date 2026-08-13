@@ -19,18 +19,21 @@ const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
     <section class="content-grid">
       <aside>Quick checks</aside>
       <div class="prose">
-        <h2>Weather or location looks stale</h2>
+        <h2>Weather looks stale</h2>
         <ol>
           <li>Open Garmin’s Weather app and confirm its current data.</li>
           <li>Sync Garmin Connect and allow Garmin’s cached weather time to refresh.</li>
           <li>Confirm the watch face has its requested permissions.</li>
           <li>Restart the watch if settings or cached data remain stale.</li>
         </ol>
-        <p>
-          Garmin may omit the observation-location name. Burnished Sky Ahead then
-          shows an approximate one-decimal coordinate when possible, or
-          <code>GARMIN WEATHER</code> when neither source is usable.
-        </p>
+        <p>Burnished Sky Ahead shows Garmin’s current condition directly. It does not display an observation location, coordinate, or provider reveal.</p>
+        <h2>Read the lower-left forecast</h2>
+        <ul>
+          <li>The three small labels are local clock hours, not “hours from now.”</li>
+          <li>Each value belongs to the forecast node beside it.</li>
+          <li>RAIN, SNOW, and MIX show precipitation chance; TEMP shows forecast temperature.</li>
+          <li>The icon identifies the selected forecast mode. Missing data remains <code>--</code>.</li>
+        </ul>
         <h2>Settings</h2>
         <ul>
           <li><strong>AOD ornament:</strong> Three-rail, Victory Laurel, Quoted Time, None, or Daily Rotation.</li>

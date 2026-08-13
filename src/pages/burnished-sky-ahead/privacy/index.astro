@@ -8,7 +8,7 @@ import SiteLayout from "../../../layouts/SiteLayout.astro";
 >
   <div class="page-shell">
     <header class="page-intro">
-      <p class="eyebrow">Version 1.0.0 notice</p>
+      <p class="eyebrow">Version 1.1.1 notice</p>
       <h1>Privacy</h1>
       <p class="lede">Burnished Sky Ahead reads selected Garmin-provided data on the watch. The current release does not send it to devjoe.</p>
     </header>
@@ -21,7 +21,6 @@ import SiteLayout from "../../../layouts/SiteLayout.astro";
           <li>Daily steps and calories, plus the latest cached heart-rate sample.</li>
           <li>Garmin-cached current weather and hourly forecasts.</li>
           <li>An available cached position used to calculate sunrise and sunset.</li>
-          <li>Garmin’s observation-location label when available.</li>
         </ul>
         <h2>Processing and transmission</h2>
         <p>
@@ -29,12 +28,7 @@ import SiteLayout from "../../../layouts/SiteLayout.astro";
           advertising SDK, analytics SDK, account system, or developer telemetry.
           It does not send the data above to devjoe.
         </p>
-        <p>
-          When Garmin does not provide a trustworthy location label, the watch
-          face may briefly display Garmin’s approximate one-decimal observation
-          coordinate. Coordinates are not transmitted, serialized, or written to
-          release logs.
-        </p>
+        <p>The watch face does not display or transmit an observation-location name or coordinate.</p>
         <h2>Stored preferences</h2>
         <p>
           Garmin’s application-properties system stores only the selected AOD
