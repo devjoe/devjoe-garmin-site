@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T12:17:44.503Z",
+  "generatedAt": "2026-08-14T13:45:00.000Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
     "name": "Burnished Sky Ahead",
     "shortName": "Sky Ahead",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "category": "Watch Face",
     "openingSentence": "A refined watch face for time, weather, and the hours ahead.",
     "launchLanguages": [
@@ -16,11 +16,11 @@
   "release": {
     "stage": "production",
     "changelog": {
-      "version": "1.2.0",
+      "version": "1.2.1",
       "status": "released",
       "summary": [
-        "Seven new Connect IQ product IDs across Venu, vivoactive, Forerunner, Instinct, and D2 families.",
-        "A discreet alarm indicator beside the weekday when Garmin reports an alarm on supported devices."
+        "Improved reliability when applying or updating the watch face.",
+        "Added startup safeguards for forecast data and display resources without changing the appearance, settings, or supported devices."
       ]
     }
   },
