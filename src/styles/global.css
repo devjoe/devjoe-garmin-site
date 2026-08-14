@@ -352,6 +352,91 @@ h3 { font-size: clamp(1.55rem, 2.4vw, 2.2rem); letter-spacing: -0.025em; }
 .prose li + li { margin-top: 0.55em; }
 .callout { margin: 34px 0; padding: 22px 24px; border-left: 2px solid var(--brass); background: var(--ground-raised); }
 .callout p { margin: 0; }
+.compact-actions { margin-top: -12px; margin-bottom: 42px; }
+
+.forecast-intro { max-width: 980px; }
+.forecast-examples { padding-block: 0 120px; }
+.forecast-example-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(18px, 3vw, 34px);
+  margin-top: 46px;
+}
+.forecast-example {
+  min-width: 0;
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(145deg, rgba(209, 166, 93, 0.055), transparent 42%),
+    var(--ground-raised);
+}
+.forecast-example.temp-example {
+  background:
+    linear-gradient(145deg, rgba(168, 154, 196, 0.06), transparent 42%),
+    var(--ground-raised);
+}
+.forecast-example-heading { display: flex; align-items: center; gap: 16px; }
+.forecast-example-heading h3 { font-size: clamp(1.55rem, 2.4vw, 2.15rem); }
+.forecast-symbol {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  display: grid;
+  place-items: center;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  font-size: 0.78rem;
+}
+.forecast-symbol.rain { color: #7fc7dc; }
+.forecast-symbol.temp { color: var(--brass-bright); }
+.forecast-mode {
+  margin: 0 0 8px;
+  color: var(--brass-bright) !important;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+.forecast-rail {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 24px;
+  align-items: center;
+  margin: 42px 0 34px;
+  padding: 0 6px;
+}
+.forecast-rail::before {
+  position: absolute;
+  left: 12%;
+  right: 7%;
+  top: 50%;
+  height: 1px;
+  content: "";
+  background: linear-gradient(90deg, var(--brass), var(--violet));
+}
+.forecast-point { position: relative; z-index: 1; display: grid; place-items: center; gap: 12px; }
+.forecast-point i {
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--brass-bright);
+  border-radius: 50%;
+  background: var(--ground-raised);
+  box-shadow: 0 0 0 5px rgba(209, 166, 93, 0.08);
+}
+.forecast-hour { color: var(--ink); font-size: 0.9rem; font-weight: 700; letter-spacing: 0.08em; }
+.forecast-point strong { color: var(--ink-soft); font-size: 1.12rem; }
+.forecast-arrow { position: relative; z-index: 1; color: var(--violet); font-size: 1.5rem; }
+.forecast-example > p { margin: 0; color: var(--ink-soft); }
+.forecast-mode-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  margin: 34px 0;
+  border: 1px solid var(--line);
+  background: var(--line);
+}
+.forecast-mode-grid article { padding: 22px; background: var(--ground-raised); }
+.forecast-mode-grid strong { color: var(--brass-bright); letter-spacing: 0.12em; }
+.forecast-mode-grid p { margin: 7px 0 0; }
 
 .device-list { display: grid; gap: 1px; margin-top: 40px; border: 1px solid var(--line); background: var(--line); }
 .device-row { display: grid; grid-template-columns: 1.4fr 0.8fr 0.9fr; align-items: center; gap: 20px; min-height: 82px; padding: 18px 22px; background: var(--ground-raised); }
@@ -386,6 +471,7 @@ h3 { font-size: clamp(1.55rem, 2.4vw, 2.2rem); letter-spacing: -0.025em; }
   .feature { min-height: 210px; }
   .feature-index { margin-bottom: 26px; }
   .content-grid { grid-template-columns: 1fr; gap: 20px; }
+  .forecast-example-grid { grid-template-columns: 1fr; }
   .device-row { grid-template-columns: 1fr; gap: 5px; }
   .milestone { grid-template-columns: 56px 1fr; gap: 18px; }
   .milestone > :last-child { grid-column: 2; }
@@ -402,6 +488,7 @@ h3 { font-size: clamp(1.55rem, 2.4vw, 2.2rem); letter-spacing: -0.025em; }
   .product-hero-copy h1 { font-size: clamp(3.55rem, 16vw, 4.6rem); }
   .product-hero-art::before { inset: 5% 2% -3% 8%; transform: translate(11px, 11px); }
   .visual-grid { grid-template-columns: 1fr; }
+  .forecast-mode-grid { grid-template-columns: 1fr; }
   .visual-card-copy { padding: 20px; }
   .action-row { flex-direction: column; }
   .button { width: 100%; }

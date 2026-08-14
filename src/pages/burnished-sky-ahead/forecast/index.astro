@@ -1,0 +1,136 @@
+---
+import SiteLayout from "../../../layouts/SiteLayout.astro";
+
+const modes = [
+  { name: "RAIN", meaning: "Rain is the earliest meaningful precipitation." },
+  { name: "SNOW", meaning: "Snow is the earliest meaningful precipitation." },
+  { name: "MIX", meaning: "Mixed or freezing precipitation appears first." },
+  { name: "TEMP", meaning: "No meaningful precipitation appears within nine hours." },
+];
+---
+
+<SiteLayout
+  title="How to read the forecast — Burnished Sky Ahead"
+  description="A visual guide to the three-node weather forecast in Burnished Sky Ahead."
+  current="support"
+>
+  <div class="page-shell">
+    <header class="page-intro forecast-intro">
+      <p class="eyebrow">Burnished Sky Ahead · Field guide</p>
+      <h1>Three points.<br />The hours ahead.</h1>
+      <p class="lede">
+        The lower-left miniature is a timeline. Read each column from top to
+        bottom: local clock hour, forecast node, then its value.
+      </p>
+    </header>
+
+    <section class="forecast-examples" aria-labelledby="examples-title">
+      <div class="section-heading">
+        <p class="eyebrow">Two common readings</p>
+        <h2 id="examples-title">Clock time, not a countdown.</h2>
+      </div>
+
+      <div class="forecast-example-grid">
+        <article class="forecast-example">
+          <div class="forecast-example-heading">
+            <span class="forecast-symbol rain" aria-hidden="true">◆</span>
+            <div>
+              <p class="forecast-mode">RAIN · 3H</p>
+              <h3>Rain in the next three hours</h3>
+            </div>
+          </div>
+          <div class="forecast-rail" aria-label="At 6, 7, and 8 o'clock, rain chances are 20, 60, and 80 percent">
+            <div class="forecast-point">
+              <span class="forecast-hour">06</span><i></i><strong>20%</strong>
+            </div>
+            <div class="forecast-point">
+              <span class="forecast-hour">07</span><i></i><strong>60%</strong>
+            </div>
+            <div class="forecast-point">
+              <span class="forecast-hour">08</span><i></i><strong>80%</strong>
+            </div>
+            <span class="forecast-arrow" aria-hidden="true">→</span>
+          </div>
+          <p>
+            If the current time is 05:32, these labels mean 06:00, 07:00, and
+            08:00. The percentages belong to the node beside each hour.
+          </p>
+        </article>
+
+        <article class="forecast-example temp-example">
+          <div class="forecast-example-heading">
+            <span class="forecast-symbol temp" aria-hidden="true">◇</span>
+            <div>
+              <p class="forecast-mode">TEMP · 6H</p>
+              <h3>A dry six-hour temperature view</h3>
+            </div>
+          </div>
+          <div class="forecast-rail" aria-label="At 7, 9, and 11 o'clock, forecast temperatures are 28, 27, and 26 degrees">
+            <div class="forecast-point">
+              <span class="forecast-hour">07</span><i></i><strong>28°</strong>
+            </div>
+            <div class="forecast-point">
+              <span class="forecast-hour">09</span><i></i><strong>27°</strong>
+            </div>
+            <div class="forecast-point">
+              <span class="forecast-hour">11</span><i></i><strong>26°</strong>
+            </div>
+            <span class="forecast-arrow" aria-hidden="true">→</span>
+          </div>
+          <p>
+            When the next nine hours are meaningfully dry, the module shows
+            actual forecast temperatures at +2, +4, and +6 hours.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section content-grid">
+      <aside>How it decides</aside>
+      <div class="prose">
+        <h2>The shortest useful horizon.</h2>
+        <p>
+          The face uses Garmin’s cached hourly forecast and selects the earliest
+          meaningful precipitation within nine hours. It then chooses a 3H, 6H,
+          or 9H view. A distant 9H view appears only when precipitation begins
+          later—not as a default.
+        </p>
+
+        <div class="forecast-mode-grid">
+          {modes.map((mode) => (
+            <article>
+              <strong>{mode.name}</strong>
+              <p>{mode.meaning}</p>
+            </article>
+          ))}
+        </div>
+
+        <h2>What changes by horizon.</h2>
+        <ul>
+          <li><strong>3H:</strong> each node represents the next individual hour.</li>
+          <li><strong>6H:</strong> each precipitation node summarizes a two-hour window.</li>
+          <li><strong>9H:</strong> each precipitation node summarizes a three-hour window.</li>
+          <li><strong>TEMP 6H:</strong> the nodes show temperatures at +2, +4, and +6 hours.</li>
+        </ul>
+        <p>
+          For RAIN, SNOW, and MIX, a bucket displays the highest precipitation
+          chance in its interval. The printed hour is the end of that interval.
+          The watch follows your 12/24-hour setting and crosses midnight naturally.
+        </p>
+
+        <div class="callout">
+          <p>
+            <strong>Missing stays missing.</strong> If Garmin has no trustworthy
+            value or forecast time, Burnished Sky Ahead shows <code>--</code>
+            rather than inventing a number.
+          </p>
+        </div>
+
+        <div class="action-row">
+          <a class="button primary" href="/burnished-sky-ahead/">Back to the watch face</a>
+          <a class="button" href="/burnished-sky-ahead/support/">Support</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</SiteLayout>
