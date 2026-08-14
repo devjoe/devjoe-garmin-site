@@ -27,9 +27,15 @@ const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
           <li>Restart the watch if settings or cached data remain stale.</li>
         </ol>
         <p>
-          Garmin may omit the observation-location name. Burnished Sky Ahead then
-          shows an approximate one-decimal coordinate when possible, or
-          <code>GARMIN WEATHER</code> when neither source is usable.
+          The watch face shows the current condition caption directly. It does
+          not reveal coordinates or rotate through a provider/location label.
+        </p>
+        <h2>Alarm indicator</h2>
+        <p>
+          On supported devices, a small icon appears beside the weekday when
+          Garmin reports an alarm. Connect IQ does not expose the next alarm
+          time, repeat rule, weekday, or Smart Wake state, so the watch face does
+          not guess them. The indicator stays hidden in AOD.
         </p>
         <h2>Settings</h2>
         <ul>

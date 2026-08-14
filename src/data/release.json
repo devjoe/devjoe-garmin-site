@@ -1,23 +1,27 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-09T00:00:00.000Z",
+  "generatedAt": "2026-08-14T12:17:44.503Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
     "name": "Burnished Sky Ahead",
     "shortName": "Sky Ahead",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "category": "Watch Face",
-    "openingSentence": "A refined watch face made for daily life with the Soft Gold Titanium and French Gray Forerunner 970—and adapted with care for selected round AMOLED Garmin watches.",
+    "openingSentence": "A refined watch face for time, weather, and the hours ahead.",
     "launchLanguages": [
       "eng"
     ]
   },
   "release": {
-    "stage": "beta-candidate",
+    "stage": "production-candidate",
     "changelog": {
-      "version": "1.0.0",
-      "status": "not-yet-released"
+      "version": "1.2.0",
+      "status": "awaiting-production-submission",
+      "summary": [
+        "Seven new Connect IQ product IDs across Venu, vivoactive, Forerunner, Instinct, and D2 families.",
+        "A discreet alarm indicator beside the weekday when Garmin reports an alarm on supported devices."
+      ]
     }
   },
   "urls": {
@@ -25,7 +29,8 @@
     "support": "https://garmin.devjoe.app/burnished-sky-ahead/support/",
     "privacy": "https://garmin.devjoe.app/burnished-sky-ahead/privacy/",
     "roadmap": "https://garmin.devjoe.app/burnished-sky-ahead/roadmap/",
-    "supportEmail": "support@devjoe.app"
+    "supportEmail": "support@devjoe.app",
+    "connectIqStore": "https://apps.garmin.com/apps/0ebdd8d0-43a6-4f3d-86e2-57b2c46e9399"
   },
   "devices": [
     {
@@ -81,6 +86,96 @@
       "name": "Venu 2S",
       "displayProfile": "round-360x360",
       "evidence": "Simulator validated"
+    },
+    {
+      "id": "fenix843mm",
+      "name": "fēnix 8 43mm",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fenix847mm",
+      "name": "fēnix 8 47/51mm · tactix 8 47/51mm · quatix 8 47/51mm",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fenixe",
+      "name": "fēnix E",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fr965",
+      "name": "Forerunner 965",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fenix8pro47mm",
+      "name": "fēnix 8 Pro 47/51mm · MicroLED · quatix 8 Pro 47/51mm",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "epix2pro42mm",
+      "name": "epix Pro (Gen 2) 42mm",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "epix2pro47mm",
+      "name": "epix Pro (Gen 2) 47mm · quatix 7 Pro",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "epix2pro51mm",
+      "name": "epix Pro (Gen 2) 51mm · D2 Mach 1 Pro · tactix 7 AMOLED",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "venu441mm",
+      "name": "Venu 4 41mm",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "venu445mm",
+      "name": "Venu 4 45mm · D2 Air X15",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "venu3",
+      "name": "Venu 3",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "venu3s",
+      "name": "Venu 3S",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "vivoactive6",
+      "name": "vívoactive 6",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fr170m",
+      "name": "Forerunner 170 Music",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "instinct3amoled45mm",
+      "name": "Instinct 3 AMOLED 45mm",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
     }
   ],
   "settings": [
@@ -117,7 +212,6 @@
     }
   ],
   "privacy": {
-    "effectiveDate": "2026-01-01",
     "developerBackend": false,
     "analytics": false,
     "advertising": false,
@@ -129,6 +223,7 @@
       "cached position for sunrise and sunset calculation",
       "cached heart rate",
       "activity data",
+      "alarm status reported by Garmin device settings",
       "application settings"
     ],
     "missingDataPolicy": "Show an honest fallback; never invent a value."

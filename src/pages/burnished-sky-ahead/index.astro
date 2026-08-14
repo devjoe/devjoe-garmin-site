@@ -34,7 +34,7 @@ const gallery = [
   <div class="page-shell">
     <section class="product-hero">
       <div class="hero-copy product-hero-copy">
-        <p class="eyebrow">Garmin watch face · {release.product.version} Beta candidate</p>
+        <p class="eyebrow">Garmin watch face · {release.product.version} Production candidate</p>
         <h1>Burnished<br />Sky Ahead</h1>
         <p>
           Made first for my own Soft Gold Titanium and French Gray Forerunner 970:
@@ -43,7 +43,7 @@ const gallery = [
         <div class="action-row">
           <a class="button primary" href="/burnished-sky-ahead/devices/">View supported devices</a>
           <a class="button" href="/burnished-sky-ahead/support/">Get support</a>
-          <span class="button disabled" aria-disabled="true">Connect IQ · coming at launch</span>
+          <a class="button" href={release.urls.connectIqStore}>Get it on Connect IQ</a>
         </div>
       </div>
       <figure class="product-hero-art">
@@ -112,10 +112,11 @@ const gallery = [
           <li>Battery, cached heart rate, calories, and daily steps.</li>
           <li>Current Garmin weather, temperature, and a concise condition caption.</li>
           <li>A contextual three-node RAIN, SNOW, MIX, or TEMP forecast.</li>
+          <li>A discreet alarm indicator when Garmin reports an alarm on supported devices.</li>
           <li>A purpose-built AMOLED always-on display.</li>
         </ul>
         <div class="callout">
-          <p><strong>Missing stays missing.</strong> Unavailable values display as <code>--</code>, <code>WEATHER</code>, or <code>GARMIN WEATHER</code> rather than guessed data.</p>
+          <p><strong>Missing stays missing.</strong> Unavailable values display as <code>--</code> or an honest weather fallback rather than guessed data.</p>
         </div>
 
         <h2>The shortest useful horizon.</h2>

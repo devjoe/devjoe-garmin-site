@@ -8,7 +8,7 @@ import SiteLayout from "../../../layouts/SiteLayout.astro";
 >
   <div class="page-shell">
     <header class="page-intro">
-      <p class="eyebrow">Version 1.0.0 notice</p>
+      <p class="eyebrow">Current privacy notice</p>
       <h1>Privacy</h1>
       <p class="lede">Burnished Sky Ahead reads selected Garmin-provided data on the watch. The current release does not send it to devjoe.</p>
     </header>
@@ -21,7 +21,7 @@ import SiteLayout from "../../../layouts/SiteLayout.astro";
           <li>Daily steps and calories, plus the latest cached heart-rate sample.</li>
           <li>Garmin-cached current weather and hourly forecasts.</li>
           <li>An available cached position used to calculate sunrise and sunset.</li>
-          <li>Garmin’s observation-location label when available.</li>
+          <li>Garmin’s alarm status count when the device exposes it.</li>
         </ul>
         <h2>Processing and transmission</h2>
         <p>
@@ -30,10 +30,9 @@ import SiteLayout from "../../../layouts/SiteLayout.astro";
           It does not send the data above to devjoe.
         </p>
         <p>
-          When Garmin does not provide a trustworthy location label, the watch
-          face may briefly display Garmin’s approximate one-decimal observation
-          coordinate. Coordinates are not transmitted, serialized, or written to
-          release logs.
+          The watch face does not display coordinates or transmit, serialize, or
+          write them to release logs. Alarm status is processed locally and is
+          used only to decide whether the small indicator is visible.
         </p>
         <h2>Stored preferences</h2>
         <p>
