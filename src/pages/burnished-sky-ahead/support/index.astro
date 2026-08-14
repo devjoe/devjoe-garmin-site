@@ -19,7 +19,7 @@ const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
     <section class="content-grid">
       <aside>Quick checks</aside>
       <div class="prose">
-        <h2>Weather or location looks stale</h2>
+        <h2>Weather looks stale</h2>
         <ol>
           <li>Open Garmin’s Weather app and confirm its current data.</li>
           <li>Sync Garmin Connect and allow Garmin’s cached weather time to refresh.</li>
@@ -30,6 +30,13 @@ const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
           The watch face shows the current condition caption directly. It does
           not reveal coordinates or rotate through a provider/location label.
         </p>
+        <h2>Read the lower-left forecast</h2>
+        <ul>
+          <li>The three small labels are local clock hours, not “hours from now.”</li>
+          <li>Each value belongs to the forecast node beside it.</li>
+          <li>RAIN, SNOW, and MIX show precipitation chance; TEMP shows forecast temperature.</li>
+          <li>The icon identifies the selected forecast mode. Missing data remains <code>--</code>.</li>
+        </ul>
         <h2>Alarm indicator</h2>
         <p>
           On supported devices, a small icon appears beside the weekday when

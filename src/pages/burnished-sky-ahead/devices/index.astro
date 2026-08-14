@@ -12,10 +12,10 @@ import release from "../../../data/release.json";
     <header class="page-intro">
       <p class="eyebrow">Version {release.product.version}</p>
       <h1>Supported devices</h1>
-      <p class="lede">Every launch target passes its native build and visual family gates. Evidence labels keep physical review distinct from Simulator validation.</p>
+      <p class="lede">Every released target passes its native build and visual family gates. Evidence labels keep physical review distinct from Simulator validation.</p>
     </header>
     <section class="content-grid">
-      <aside>{release.devices.length} launch products</aside>
+      <aside>{release.devices.length} Connect IQ product IDs</aside>
       <div class="prose">
         <div class="device-list">
           {release.devices.map((device) => (
@@ -27,7 +27,7 @@ import release from "../../../data/release.json";
           ))}
         </div>
         <div class="callout">
-          <p>Simulator validation is product-specific acceptance evidence, not a claim of hands-on physical testing. Forerunner 970 is the physical reference.</p>
+          <p>Some Connect IQ product IDs map to multiple marketed device names. Simulator validation is product-specific acceptance evidence, not a claim of hands-on physical testing. Forerunner 970 is the physical reference.</p>
         </div>
         <p>
           The fēnix 7 family is not part of this update. Its MIP display needs a

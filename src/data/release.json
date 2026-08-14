@@ -37,7 +37,7 @@
       "id": "fr970",
       "name": "Forerunner 970",
       "displayProfile": "round-454x454",
-      "evidence": "FR970 physical candidate"
+      "evidence": "Physically tested"
     },
     {
       "id": "fr170",
@@ -212,6 +212,7 @@
     }
   ],
   "privacy": {
+    "effectiveDate": "2026-01-01",
     "developerBackend": false,
     "analytics": false,
     "advertising": false,
