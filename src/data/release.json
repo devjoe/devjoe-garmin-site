@@ -14,10 +14,10 @@
     ]
   },
   "release": {
-    "stage": "production-candidate",
+    "stage": "production",
     "changelog": {
       "version": "1.2.0",
-      "status": "awaiting-production-submission",
+      "status": "released",
       "summary": [
         "Seven new Connect IQ product IDs across Venu, vivoactive, Forerunner, Instinct, and D2 families.",
         "A discreet alarm indicator beside the weekday when Garmin reports an alarm on supported devices."
