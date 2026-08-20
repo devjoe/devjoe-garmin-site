@@ -19,6 +19,7 @@ import release from "../../../data/release.json";
       <div class="prose">
         <div class="callout">
           <p><strong>Every milestone is for everyone.</strong> Reaching either target begins development; it does not promise a delivery date or grant an individual unlock, vote, or priority response.</p>
+          <p>Download targets match the public Connect IQ Store tiers—1K+, 10K+, and 50K+—so each milestone can be observed without an unpublished exact count.</p>
         </div>
         <div class="milestone-list">
           {release.milestones.map((milestone) => (
@@ -45,7 +46,7 @@ import release from "../../../data/release.json";
         </p>
         <p>
           Support totals are measured as {release.support.progressBasis}.{" "}
-          Aggregate totals are updated manually; last updated <time datetime={release.support.progressLastUpdated}>August 10, 2026</time>.
+          Aggregate totals are updated manually; last updated <time datetime={release.support.progressLastUpdated}>August 20, 2026</time>.
         </p>
         <p>States move from Target not reached → Target reached → In design → In testing → Released.</p>
       </div>

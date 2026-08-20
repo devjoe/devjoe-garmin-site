@@ -237,12 +237,12 @@
     "individualEntitlement": false,
     "progressUpdateMode": "manual",
     "progressBasis": "cumulative gross voluntary Tips in USD before platform and payment fees",
-    "progressLastUpdated": "2026-08-10"
+    "progressLastUpdated": "2026-08-20"
   },
   "milestones": [
     {
       "id": "M1",
-      "downloads": 5000,
+      "downloads": 1000,
       "supportUsd": 50,
       "feature": "Two additional curated palettes",
       "description": "Two more carefully tuned colorways, released as a free update for every user.",
@@ -250,7 +250,7 @@
     },
     {
       "id": "M2",
-      "downloads": 15000,
+      "downloads": 10000,
       "supportUsd": 200,
       "feature": "Additional curated data-panel presets",
       "description": "More considered ways to arrange useful watch data without turning the face into a dashboard.",
@@ -258,7 +258,7 @@
     },
     {
       "id": "M3",
-      "downloads": 30000,
+      "downloads": 50000,
       "supportUsd": 800,
       "feature": "Weather Miniature Motion",
       "description": "Optional, restrained motion limited to the weather region on the active face. AOD remains static.",
