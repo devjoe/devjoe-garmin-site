@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-14T13:45:00.000Z",
+  "generatedAt": "2026-08-20T17:48:58.822Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
     "name": "Burnished Sky Ahead",
     "shortName": "Sky Ahead",
-    "version": "1.2.1",
+    "version": "1.3.1",
     "category": "Watch Face",
     "openingSentence": "A refined watch face for time, weather, and the hours ahead.",
     "launchLanguages": [
@@ -16,11 +16,11 @@
   "release": {
     "stage": "production",
     "changelog": {
-      "version": "1.2.1",
+      "version": "1.3.1",
       "status": "released",
       "summary": [
-        "Improved reliability when applying or updating the watch face.",
-        "Added startup safeguards for forecast data and display resources without changing the appearance, settings, or supported devices."
+        "Improved resilience during Connect IQ Store updates.",
+        "No change to the watch-face appearance, settings, permissions, or supported devices."
       ]
     }
   },
@@ -176,6 +176,42 @@
       "name": "Instinct 3 AMOLED 45mm",
       "displayProfile": "round-390x390",
       "evidence": "Simulator validated"
+    },
+    {
+      "id": "fr165",
+      "name": "Forerunner 165",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fr165m",
+      "name": "Forerunner 165 Music",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "venu2",
+      "name": "Venu 2",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "venu2plus",
+      "name": "Venu 2 Plus",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "vivoactive5",
+      "name": "vívoactive 5",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "epix2",
+      "name": "epix (Gen 2) · quatix 7 Sapphire",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated"
     }
   ],
   "settings": [
@@ -202,17 +238,18 @@
       ]
     },
     {
-      "id": "wakeAnimation",
-      "label": "Wake animation",
-      "default": true,
+      "id": "outdoorBrief",
+      "label": "Outdoor Brief",
+      "default": "Off",
       "options": [
-        true,
-        false
+        "Off",
+        "Always on",
+        "Toggle by long press",
+        "Smart"
       ]
     }
   ],
   "privacy": {
-    "effectiveDate": "2026-01-01",
     "developerBackend": false,
     "analytics": false,
     "advertising": false,
@@ -236,14 +273,8 @@
     "url": "https://ko-fi.com/devjoe",
     "individualEntitlement": false,
     "purchasesUnlocksOrGuaranteesAnything": false,
-    "goal": {
-      "type": "testing-and-maintenance-fund",
-      "title": "Testing and Maintenance Fund",
-      "purpose": "Support helps cover Garmin device testing, development tools, maintenance, and continued improvements.",
-      "disclaimer": "Tips are voluntary. They do not purchase, unlock, or guarantee any feature, product, service, or release date."
-    },
-    "progressUpdateMode": "manual",
-    "progressLastUpdated": "2026-08-20"
+    "purpose": "Optional tips help cover Garmin device testing, development tools, maintenance, and continued improvements.",
+    "goalEnabled": false
   },
   "milestones": [
     {
