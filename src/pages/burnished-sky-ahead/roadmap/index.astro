@@ -10,15 +10,15 @@ import release from "../../../data/release.json";
 >
   <div class="page-shell">
     <header class="page-intro">
-      <p class="eyebrow">Community-supported, released for everyone</p>
+      <p class="eyebrow">Creator-curated, released for everyone</p>
       <h1>Roadmap</h1>
-      <p class="lede">Downloads and optional community support can accelerate future free updates. Store reviews and supporter messages help inform the work; devjoe curates the final scope.</p>
+      <p class="lede">Download milestones, Store reviews, and support messages help inform future free updates; devjoe curates the final scope.</p>
     </header>
     <section class="content-grid">
       <aside>Release milestones</aside>
       <div class="prose">
         <div class="callout">
-          <p><strong>Every milestone is for everyone.</strong> Reaching either target begins development; it does not promise a delivery date or grant an individual unlock, vote, or priority response.</p>
+          <p><strong>Every milestone is for everyone.</strong> Reaching a download target begins evaluation; it does not promise a delivery date or grant an individual unlock, vote, or priority response.</p>
           <p>Download targets match the public Connect IQ Store tiers—1K+, 10K+, and 50K+—so each milestone can be observed without an unpublished exact count.</p>
         </div>
         <div class="milestone-list">
@@ -27,7 +27,6 @@ import release from "../../../data/release.json";
               <div class="milestone-id">{milestone.id}</div>
               <div>
                 <strong>{milestone.downloads.toLocaleString("en-US")} downloads</strong><br />
-                <span>or a US${milestone.supportUsd} community support target</span><br />
                 <span class="status-tag">{milestone.status}</span>
               </div>
               <div>
@@ -44,11 +43,12 @@ import release from "../../../data/release.json";
           manually. Supporter names and messages remain private unless the person
           explicitly approves publication.
         </p>
-        <p>
-          Support totals are measured as {release.support.progressBasis}.{" "}
-          Aggregate totals are updated manually; last updated <time datetime={release.support.progressLastUpdated}>August 20, 2026</time>.
-        </p>
         <p>States move from Target not reached → Target reached → In design → In testing → Released.</p>
+        <h2>{release.support.goal.title}</h2>
+        <p>{release.support.goal.purpose}</p>
+        <div class="callout">
+          <p><strong>Separate from the roadmap.</strong> {release.support.goal.disclaimer} Ko-fi progress cannot change a feature's milestone state.</p>
+        </div>
       </div>
     </section>
   </div>
