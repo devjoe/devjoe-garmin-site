@@ -2,6 +2,10 @@
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import release from "../../data/release.json";
 
+const releaseState = release.release.changelog.status === "released"
+  ? "Production release"
+  : "Production candidate";
+
 const gallery = [
   {
     src: "/images/burnished-sky-ahead/02-day-night.png",
@@ -34,7 +38,7 @@ const gallery = [
   <div class="page-shell">
     <section class="product-hero">
       <div class="hero-copy product-hero-copy">
-        <p class="eyebrow">Garmin watch face · {release.product.version} Production release</p>
+        <p class="eyebrow">Garmin watch face · {release.product.version} {releaseState}</p>
         <h1>Burnished<br />Sky Ahead</h1>
         <p>
           Made first for my own Soft Gold Titanium and French Gray Forerunner 970:

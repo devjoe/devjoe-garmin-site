@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-23T17:32:20.025Z",
+  "generatedAt": "2026-08-23T17:40:46.124Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
@@ -17,7 +17,7 @@
     "stage": "production",
     "changelog": {
       "version": "1.4.0",
-      "status": "released",
+      "status": "candidate",
       "summary": [
         "Added a native sunlight-readable 260×260 MIP design for seven current-generation Forerunner and fēnix product IDs.",
         "Kept every AMOLED layout and low-power behavior on its isolated existing path.",
