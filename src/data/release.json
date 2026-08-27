@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T04:56:18.280Z",
+  "generatedAt": "2026-08-27T06:47:49.428Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
@@ -17,7 +17,7 @@
     "stage": "production",
     "changelog": {
       "version": "1.6.0",
-      "status": "candidate",
+      "status": "released",
       "summary": [
         "Added a unified alarm and Do Not Disturb status rail beside the time across supported AMOLED and MIP layouts.",
         "Added an optional notification icon and count that remains Off by default and is processed only on the watch.",
