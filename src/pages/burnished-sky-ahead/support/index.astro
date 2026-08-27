@@ -38,18 +38,25 @@ const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
           <li>The icon identifies the selected forecast mode. Missing data remains <code>--</code>.</li>
         </ul>
         <p><a href="/burnished-sky-ahead/forecast/">See the visual three-node forecast guide.</a></p>
-        <h2>Alarm indicator</h2>
+        <h2>Status rail</h2>
         <p>
-          On supported devices, a small icon appears beside the weekday when
-          Garmin reports an alarm. Connect IQ does not expose the next alarm
-          time, repeat rule, weekday, or Smart Wake state, so the watch face does
-          not guess them. The indicator stays hidden in AOD.
+          On supported devices, compact icons beside the time show alarm and Do
+          Not Disturb state when Garmin reports them. Connect IQ does not expose
+          the next alarm time, repeat rule, weekday, or Smart Wake state, so the
+          watch face does not guess them. Status indicators stay hidden in AOD.
+        </p>
+        <p>
+          Show notification count is Off by default. When enabled, the rail
+          shows Garmin's on-device notification count, capped at <code>99+</code>.
+          It does not read message contents, sender names, or notification text.
         </p>
         <h2>Settings</h2>
         <ul>
           <li><strong>AOD ornament:</strong> Three-rail, Victory Laurel, Quoted Time, None, or Daily Rotation.</li>
           <li><strong>Weather frame:</strong> Faceted Seal, Simple Circle, or None.</li>
-          <li><strong>Wake animation:</strong> On or Off.</li>
+          <li><strong>Outdoor Brief:</strong> Off, Always on, Toggle by long press, or Smart on supported AMOLED watches.</li>
+          <li><strong>Weather Signals:</strong> Off or On on supported AMOLED watches.</li>
+          <li><strong>Show notification count:</strong> Off or On; Off by default.</li>
         </ul>
         <h2>Report a problem</h2>
         <p>

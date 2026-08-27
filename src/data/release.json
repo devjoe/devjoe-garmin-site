@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-24T07:47:29.310Z",
+  "generatedAt": "2026-08-27T04:56:18.280Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
     "name": "Burnished Sky Ahead",
     "shortName": "Sky Ahead",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "category": "Watch Face",
     "openingSentence": "Time first. The hours ahead, at a glance.",
     "launchLanguages": [
@@ -16,13 +16,13 @@
   "release": {
     "stage": "production",
     "changelog": {
-      "version": "1.5.0",
-      "status": "released",
+      "version": "1.6.0",
+      "status": "candidate",
       "summary": [
-        "Extended native sunlight-readable MIP support across 240×240, 260×260, and 280×280 layouts with eleven additional product IDs.",
-        "Kept time dominant and paired each MIP layout with a compact three-value 3H temperature or rain outlook.",
-        "Kept every AMOLED layout, Outdoor Brief, Weather Signal, motion, and low-power behavior on its isolated existing path.",
-        "Kept Forerunner 255S excluded until a dedicated small-screen design is reviewed."
+        "Added a unified alarm and Do Not Disturb status rail beside the time across supported AMOLED and MIP layouts.",
+        "Added an optional notification icon and count that remains Off by default and is processed only on the watch.",
+        "Refined status-icon contrast separately for AMOLED and sunlight-readable MIP displays.",
+        "Improved resilience when Garmin activates new code and resources during an in-place Store update."
       ]
     }
   },
@@ -366,6 +366,15 @@
         "Off",
         "On"
       ]
+    },
+    {
+      "id": "showNotificationCount",
+      "label": "Show notification count",
+      "default": "Off",
+      "options": [
+        "Off",
+        "On"
+      ]
     }
   ],
   "privacy": {
@@ -381,6 +390,8 @@
       "cached heart rate",
       "activity data",
       "alarm status reported by Garmin device settings",
+      "Do Not Disturb status reported by Garmin device settings",
+      "notification count when the optional setting is enabled",
       "application settings"
     ],
     "missingDataPolicy": "Show an honest fallback; never invent a value."

@@ -21,7 +21,8 @@ import SiteLayout from "../../../layouts/SiteLayout.astro";
           <li>Daily steps and calories, plus the latest cached heart-rate sample.</li>
           <li>Garmin-cached current weather and hourly forecasts.</li>
           <li>An available cached position used to calculate sunrise and sunset.</li>
-          <li>Garmin’s alarm status count when the device exposes it.</li>
+          <li>Garmin’s alarm and Do Not Disturb state when the device exposes it.</li>
+          <li>Garmin’s notification count when the optional Show notification count setting is enabled.</li>
         </ul>
         <h2>Processing and transmission</h2>
         <p>
@@ -31,14 +32,15 @@ import SiteLayout from "../../../layouts/SiteLayout.astro";
         </p>
         <p>
           The watch face does not display coordinates or transmit, serialize, or
-          write them to release logs. Alarm status is processed locally and is
-          used only to decide whether the small indicator is visible.
+          write them to release logs. Status values are processed locally and
+          are used only to decide whether the compact indicators are visible.
         </p>
         <h2>Stored preferences</h2>
         <p>
-          Garmin’s application-properties system stores only the selected AOD
-          ornament, weather-frame style, and wake-animation preference on behalf
-          of the watch face.
+          Garmin’s application-properties system stores only watch-face
+          preferences, including AOD ornament, weather-frame style, Outdoor
+          Brief mode, Weather Signals choices, and the default-off Show
+          notification count setting.
         </p>
         <h2>External support</h2>
         <p>
