@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-27T06:47:49.428Z",
+  "generatedAt": "2026-09-18T04:03:21.399Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
     "name": "Burnished Sky Ahead",
     "shortName": "Sky Ahead",
-    "version": "1.6.0",
+    "version": "1.9.1",
     "category": "Watch Face",
     "openingSentence": "Time first. The hours ahead, at a glance.",
     "launchLanguages": [
@@ -16,13 +16,12 @@
   "release": {
     "stage": "production",
     "changelog": {
-      "version": "1.6.0",
+      "version": "1.9.1",
       "status": "released",
       "summary": [
-        "Added a unified alarm and Do Not Disturb status rail beside the time across supported AMOLED and MIP layouts.",
-        "Added an optional notification icon and count that remains Off by default and is processed only on the watch.",
-        "Refined status-icon contrast separately for AMOLED and sunlight-readable MIP displays.",
-        "Improved resilience when Garmin activates new code and resources during an in-place Store update."
+        "Clearer English recovery instructions when the watch face cannot load.",
+        "Select a built-in Garmin watch face, enter and exit AOD, then switch back. Forerunner 970: use LIGHT.",
+        "Normal watch-face visuals and settings are unchanged."
       ]
     }
   },
@@ -87,6 +86,48 @@
       "id": "venu2s",
       "name": "Venu 2S",
       "displayProfile": "round-360x360",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fenix943mm",
+      "name": "fēnix 9 43mm",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fenix947mm",
+      "name": "fēnix 9 47/51mm",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fenix9pro43mm",
+      "name": "fēnix 9 Pro 43mm",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fenix9pro47mm",
+      "name": "fēnix 9 Pro 47mm",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fenix9pro51mm",
+      "name": "fēnix 9 Pro 51mm",
+      "displayProfile": "round-466x466",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fenix9prosolar47mm",
+      "name": "fēnix 9 Pro Solar 47mm",
+      "displayProfile": "round-260x260",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "fenix9prosolar51mm",
+      "name": "fēnix 9 Pro Solar 51mm",
+      "displayProfile": "round-280x280",
       "evidence": "Simulator validated"
     },
     {
@@ -321,6 +362,54 @@
       "id": "legacysagadarthvader",
       "name": "Darth Vader",
       "displayProfile": "round-260x260",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "approachs7042mm",
+      "name": "Approach S70 42mm",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "approachs7047mm",
+      "name": "Approach S70 47mm",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "descentmk343mm",
+      "name": "Descent Mk3 / Mk3i 43mm",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "descentmk351mm",
+      "name": "Descent Mk3i 51mm",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "marq2",
+      "name": "MARQ (Gen 2) family",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "marq2aviator",
+      "name": "MARQ (Gen 2) Aviator",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "d2mach2",
+      "name": "D2 Mach 2",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated"
+    },
+    {
+      "id": "d2mach2pro",
+      "name": "D2 Mach 2 Pro",
+      "displayProfile": "round-454x454",
       "evidence": "Simulator validated"
     }
   ],
