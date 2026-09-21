@@ -1,5 +1,6 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
+import release from "../../data/release.json";
 ---
 
 <SiteLayout title="Changelog — devjoe Garmin" description="Release history for devjoe Garmin apps.">
@@ -12,7 +13,14 @@ import SiteLayout from "../../layouts/SiteLayout.astro";
     <section class="content-grid">
       <aside>Burnished Sky Ahead</aside>
       <div class="prose">
-        <p class="status-tag">Production · current release 1.9.1</p>
+        <p class="status-tag">Production · current release {release.product.version}</p>
+        <h2>{release.release.changelog.version} — Settings reliability</h2>
+        <p><strong>Released September 19, 2026</strong></p>
+        <ul>
+          {release.release.changelog.summary.map((item) => <li>{item}</li>)}
+        </ul>
+        <p>Remaining error reports are still being investigated.</p>
+        <p class="status-tag">Production · earlier release 1.9.1</p>
         <h2>1.9.1 — Clearer recovery instructions</h2>
         <p><strong>Released September 18, 2026</strong></p>
         <ul>
