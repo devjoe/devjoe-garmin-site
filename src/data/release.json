@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-18T04:03:21.399Z",
+  "generatedAt": "2026-09-21T07:02:49.714Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
     "name": "Burnished Sky Ahead",
     "shortName": "Sky Ahead",
-    "version": "1.9.1",
+    "version": "1.9.2",
     "category": "Watch Face",
     "openingSentence": "Time first. The hours ahead, at a glance.",
     "launchLanguages": [
@@ -16,12 +16,12 @@
   "release": {
     "stage": "production",
     "changelog": {
-      "version": "1.9.1",
+      "version": "1.9.2",
       "status": "released",
       "summary": [
-        "Clearer English recovery instructions when the watch face cannot load.",
-        "Select a built-in Garmin watch face, enter and exit AOD, then switch back. Forerunner 970: use LIGHT.",
-        "Normal watch-face visuals and settings are unchanged."
+        "Improved reliability when reading and saving watch-face settings.",
+        "On-watch settings now refresh when returning from option menus.",
+        "Existing settings, color themes, and supported watches are preserved."
       ]
     }
   },
