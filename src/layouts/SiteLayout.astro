@@ -24,9 +24,9 @@ const isTraditionalChinese = lang === "zh-Hant-TW";
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const socialImageUrl = new URL(socialImage, Astro.site);
 const navigation = [
-  { href: "/burnished-sky-ahead/", label: isTraditionalChinese ? "錶面" : "Sky Ahead", id: "product" },
-  { href: "/burnished-sky-ahead/devices/", label: isTraditionalChinese ? "裝置" : "Devices", id: "devices" },
-  { href: "/burnished-sky-ahead/roadmap/", label: isTraditionalChinese ? "更新規劃" : "Roadmap", id: "roadmap" },
+  { href: "/burnished-sky-ahead/", label: isTraditionalChinese ? "錶面（EN）" : "Sky Ahead", id: "product" },
+  { href: "/burnished-sky-ahead/devices/", label: isTraditionalChinese ? "裝置（EN）" : "Devices", id: "devices" },
+  { href: "/burnished-sky-ahead/roadmap/", label: isTraditionalChinese ? "更新規劃（EN）" : "Roadmap", id: "roadmap" },
   { href: isTraditionalChinese ? "/zh-tw/burnished-sky-ahead/support/" : "/burnished-sky-ahead/support/", label: isTraditionalChinese ? "台灣支持" : "Support", id: "support" },
 ];
 ---
