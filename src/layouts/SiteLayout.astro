@@ -74,7 +74,9 @@ const navigation = [
     <footer class="site-footer">
       <div>
         <p class="eyebrow">{isTraditionalChinese ? "獨立開發" : "Independent by design"}</p>
-        <p>{isTraditionalChinese ? "由 devjoe 獨立製作的 Garmin 軟體。" : "Thoughtful Garmin software by devjoe."}</p>
+        <p>{isTraditionalChinese
+          ? current === "support" ? "由 devjoe 獨立製作。" : "由 devjoe 獨立製作的 Garmin 軟體。"
+          : "Thoughtful Garmin software by devjoe."}</p>
       </div>
       <div class="footer-links">
         <a href="/burnished-sky-ahead/privacy/">{isTraditionalChinese ? "隱私權（EN）" : "Privacy"}</a>
