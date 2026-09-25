@@ -24,10 +24,10 @@ const isTraditionalChinese = lang === "zh-Hant-TW";
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const socialImageUrl = new URL(socialImage, Astro.site);
 const navigation = [
-  { href: "/burnished-sky-ahead/", label: isTraditionalChinese ? "錶面（EN）" : "Sky Ahead", id: "product" },
-  { href: "/burnished-sky-ahead/devices/", label: isTraditionalChinese ? "裝置（EN）" : "Devices", id: "devices" },
-  { href: "/burnished-sky-ahead/roadmap/", label: isTraditionalChinese ? "更新規劃（EN）" : "Roadmap", id: "roadmap" },
-  { href: isTraditionalChinese ? "/zh-tw/burnished-sky-ahead/support/" : "/burnished-sky-ahead/support/", label: isTraditionalChinese ? "台灣支持" : "Support", id: "support" },
+  { href: "/burnished-sky-ahead/", label: isTraditionalChinese ? "錶面" : "Sky Ahead", locale: isTraditionalChinese ? "(EN)" : "", id: "product" },
+  { href: "/burnished-sky-ahead/devices/", label: isTraditionalChinese ? "裝置" : "Devices", locale: isTraditionalChinese ? "(EN)" : "", id: "devices" },
+  { href: "/burnished-sky-ahead/roadmap/", label: isTraditionalChinese ? "更新規劃" : "Roadmap", locale: isTraditionalChinese ? "(EN)" : "", id: "roadmap" },
+  { href: isTraditionalChinese ? "/zh-tw/burnished-sky-ahead/support/" : "/burnished-sky-ahead/support/", label: isTraditionalChinese ? "台灣支持" : "Support", locale: "", id: "support" },
 ];
 ---
 
@@ -65,7 +65,7 @@ const navigation = [
       <nav aria-label="Primary navigation">
         {navigation.map((item) => (
           <a href={item.href} aria-current={current === item.id ? "page" : undefined}>
-            {item.label}
+            {item.label}{item.locale && <span class="nav-language" lang="en">{item.locale}</span>}
           </a>
         ))}
       </nav>
