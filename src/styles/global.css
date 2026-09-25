@@ -536,7 +536,7 @@ h3 { font-size: clamp(1.55rem, 2.4vw, 2.2rem); letter-spacing: -0.025em; }
   }
 
   .taiwan-support-pricing {
-    margin-top: 34px;
+    margin-top: 24px;
   }
 
   .taiwan-support-pricing h2 {
@@ -547,34 +547,34 @@ h3 { font-size: clamp(1.55rem, 2.4vw, 2.2rem); letter-spacing: -0.025em; }
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 10px;
-    margin-top: 0;
+    margin: 0;
   }
 
   .taiwan-support-amount {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     min-width: 0;
+    min-height: 96px;
     padding: 15px 14px;
     border: 1px solid var(--line);
     background: var(--ground-raised);
   }
 
-  .taiwan-support-amount.recommended {
-    border-color: rgba(209, 166, 93, 0.48);
-    background: linear-gradient(145deg, rgba(209, 166, 93, 0.035), var(--ground-raised) 72%);
-  }
-
-  .taiwan-support-amount span,
-  .taiwan-support-amount strong {
+  .taiwan-support-amount dt,
+  .taiwan-support-amount dd {
     display: block;
+    margin: 0;
   }
 
-  .taiwan-support-amount span {
+  .taiwan-support-amount dt {
     color: var(--ink-faint);
     font-size: 0.8rem;
     line-height: 1.4;
   }
 
-  .taiwan-support-amount strong {
-    margin-top: 7px;
+  .taiwan-support-amount dd {
+    padding-top: 9px;
     color: var(--ink);
     font-size: clamp(1rem, 1.5vw, 1.22rem);
     white-space: nowrap;
@@ -586,24 +586,53 @@ h3 { font-size: clamp(1.55rem, 2.4vw, 2.2rem); letter-spacing: -0.025em; }
     font-size: 0.88rem;
   }
 
-  .taiwan-payment-status {
-    margin-top: 22px;
-    padding: 18px 20px;
-    border-left: 2px solid var(--brass);
-    background: var(--ground-raised);
+  .taiwan-store-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 11px;
+    color: var(--ink-faint);
+    font-size: 0.82rem;
+    letter-spacing: 0.025em;
+    text-decoration-color: rgba(143, 136, 126, 0.55);
   }
 
-  .taiwan-payment-status .eyebrow {
-    margin-bottom: 6px;
+  .taiwan-store-link:hover {
+    color: var(--ink-soft);
+    text-decoration-color: currentColor;
   }
 
-  .taiwan-payment-status p:last-child {
+  .taiwan-ecpay-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    margin-top: 21px;
+    padding: 17px 18px;
+    border: 1px solid rgba(209, 166, 93, 0.3);
+    background: linear-gradient(135deg, rgba(209, 166, 93, 0.1), var(--ground-raised) 72%);
+  }
+
+  .taiwan-ecpay-copy .eyebrow {
+    margin-bottom: 4px;
+    color: var(--success);
+  }
+
+  .taiwan-ecpay-copy p:last-child {
     margin: 0;
     color: var(--ink-soft);
   }
 
-  .taiwan-payment-status strong {
-    color: var(--ink);
+  .taiwan-ecpay-button {
+    min-height: 54px;
+    padding-inline: 24px;
+    box-shadow: 0 10px 28px rgba(209, 166, 93, 0.16);
+    white-space: nowrap;
+  }
+
+  .taiwan-ecpay-button span {
+    font-size: 1.1rem;
+    line-height: 1;
   }
 
   .taiwan-language-link {
@@ -663,12 +692,23 @@ h3 { font-size: clamp(1.55rem, 2.4vw, 2.2rem); letter-spacing: -0.025em; }
       padding: 13px 10px;
     }
 
-    .taiwan-support-amount span {
+    .taiwan-support-amount dt {
       font-size: 0.76rem;
     }
 
-    .taiwan-support-amount strong {
+    .taiwan-support-amount dd {
       font-size: 0.96rem;
+    }
+
+    .taiwan-ecpay-cta {
+      flex-direction: column;
+      align-items: stretch;
+      gap: 13px;
+      padding: 16px;
+    }
+
+    .taiwan-ecpay-button {
+      width: 100%;
     }
 
     .taiwan-support-art::before {

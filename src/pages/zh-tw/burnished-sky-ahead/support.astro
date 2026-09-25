@@ -1,11 +1,13 @@
 ---
 import SiteLayout from "../../../layouts/SiteLayout.astro";
 import release from "../../../data/release.json";
+
+const ecpayDonationUrl = "https://p.ecpay.com.tw/A6ABCC0";
 ---
 
 <SiteLayout
   title="台灣支持 — Burnished Sky Ahead"
-  description="Burnished Sky Ahead 是免費的 Garmin Connect IQ 錶面。台灣使用者可在此了解自願支持方式與建議金額。"
+  description="Burnished Sky Ahead 是免費的 Garmin Connect IQ 錶面。台灣使用者可在此了解自願支持方式。"
   current="support"
   lang="zh-Hant-TW"
   showGarminDisclaimer={false}
@@ -16,7 +18,7 @@ import release from "../../../data/release.json";
         <p class="eyebrow">Burnished Sky Ahead</p>
         <h1 id="taiwan-support-title">支持免費的<br />Burnished Sky Ahead 錶面</h1>
         <p class="taiwan-support-lede">
-          喜歡的話，歡迎自願支持我繼續開發、測試與維護。<img
+          喜歡的話，歡迎支持我繼續開發、測試與維護。<img
             class="taiwan-support-avatar"
             src="/images/burnished-sky-ahead/ko-fi-momitu.webp"
             alt="Momitu 坐在電腦前的 Ko-fi 頭像"
@@ -25,33 +27,42 @@ import release from "../../../data/release.json";
             loading="lazy"
           />
         </p>
+        <a class="taiwan-store-link" href={release.urls.connectIqStore}>
+          Garmin Connect IQ 免費下載 <span aria-hidden="true">↗</span>
+        </a>
 
         <section class="taiwan-support-pricing" aria-label="支持選項">
-          <div class="taiwan-support-amounts">
-            <div class="taiwan-support-amount recommended">
-              <span>支持開發</span>
-              <strong>NT$149</strong>
+          <dl class="taiwan-support-amounts">
+            <div class="taiwan-support-amount">
+              <dt>真心感謝！</dt>
+              <dd>NT$149</dd>
             </div>
             <div class="taiwan-support-amount">
-              <span>多支持一點</span>
-              <strong>NT$249</strong>
+              <dt>下跪道謝！！</dt>
+              <dd>NT$249</dd>
             </div>
             <div class="taiwan-support-amount">
-              <span>自訂金額</span>
-              <strong>自訂</strong>
+              <dt>無限感謝：Token 自由啦！！！</dt>
+              <dd>NT$599</dd>
             </div>
-          </div>
+          </dl>
         </section>
 
-        <div class="taiwan-payment-status" role="status">
-          <p class="eyebrow">台灣付款</p>
-          <p><strong>綠界付款尚未開放。</strong>核准並完成設定後，我會在這裡放上付款連結。</p>
+        <div class="taiwan-ecpay-cta">
+          <div class="taiwan-ecpay-copy">
+            <p class="eyebrow">綠界付款</p>
+            <p>贊助若有附留言，每一則都會用心閱讀。感謝支持！</p>
+          </div>
+          <a
+            class="button primary taiwan-ecpay-button"
+            href={ecpayDonationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            前往綠界贊助 <span aria-hidden="true">↗</span>
+          </a>
         </div>
 
-        <div class="action-row">
-          <a class="button primary" href={release.urls.connectIqStore}>前往 Garmin Connect IQ 免費下載</a>
-          <a class="button" href={`mailto:${release.urls.supportEmail}`}>聯絡我</a>
-        </div>
         <p class="taiwan-language-link"><a href="/burnished-sky-ahead/support/">English support page</a></p>
       </div>
 
@@ -69,9 +80,9 @@ import release from "../../../data/release.json";
     <section class="content-grid" aria-label="更多資訊">
       <aside>更多資訊</aside>
       <div class="prose">
-        <h2>說明</h2>
+        <h2>提醒</h2>
         <p>
-          功能全都免費。支持不會解鎖額外功能或內容，也不保證軟體更新時程。
+          手錶功能完全免費，支持不會解鎖額外功能或內容，也不保證軟體更新時程。
         </p>
 
         <h2>有問題？</h2>
