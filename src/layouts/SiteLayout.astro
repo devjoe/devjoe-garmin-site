@@ -8,6 +8,7 @@ interface Props {
   description: string;
   current?: string;
   socialImage?: string;
+  socialImageAlt?: string;
   lang?: string;
   showGarminDisclaimer?: boolean;
 }
@@ -17,6 +18,7 @@ const {
   description,
   current = "",
   socialImage = "/images/burnished-sky-ahead/hero-1440x720.png",
+  socialImageAlt = "Burnished Sky Ahead watch face on a Soft Gold Titanium and French Gray Garmin watch",
   lang = "en",
   showGarminDisclaimer = true,
 } = Astro.props;
@@ -41,17 +43,19 @@ const navigation = [
     <meta name="theme-color" content="#12100e" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="devjoe Garmin" />
+    <meta property="og:locale" content={lang === "zh-Hant-TW" ? "zh_TW" : "en_US"} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
     <meta property="og:image" content={socialImageUrl} />
     <meta property="og:image:width" content="1440" />
     <meta property="og:image:height" content="720" />
-    <meta property="og:image:alt" content="Burnished Sky Ahead watch face on a Soft Gold Titanium and French Gray Garmin watch" />
+    <meta property="og:image:alt" content={socialImageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImageUrl} />
+    <meta name="twitter:image:alt" content={socialImageAlt} />
     <link rel="canonical" href={canonical} />
     <title>{title}</title>
   </head>
