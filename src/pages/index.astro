@@ -1,5 +1,6 @@
 ---
 import SiteLayout from "../layouts/SiteLayout.astro";
+import listing from "../data/store-listing.json";
 ---
 
 <SiteLayout
@@ -7,13 +8,12 @@ import SiteLayout from "../layouts/SiteLayout.astro";
   description="Independent Garmin apps by devjoe, designed with clarity, restraint, and care."
 >
   <div class="page-shell">
-    <section class="hero">
+    <section class="hero home-release">
       <div class="hero-copy">
         <p class="eyebrow">Independent Garmin software</p>
-        <h1>Small surfaces. Considered details.</h1>
+        <h1>Time first,<br />Weather ahead,<br />at a glance.</h1>
         <p>
-          Quietly distinctive watch experiences that make dense information
-          glanceable, honest, and worth wearing every day.
+          A clean face, with room for what matters to you.
         </p>
         <div class="action-row">
           <a class="button primary" href="/burnished-sky-ahead/">Discover Burnished Sky Ahead</a>
@@ -22,39 +22,38 @@ import SiteLayout from "../layouts/SiteLayout.astro";
       </div>
       <a class="home-product-card" href="/burnished-sky-ahead/" aria-label="Discover Burnished Sky Ahead">
         <img
-          src="/images/burnished-sky-ahead/01-essentials-at-a-glance.png"
+          src="/images/burnished-sky-ahead/1.11.0/hero.gif"
           alt="Burnished Sky Ahead watch-face composition"
-          width="900"
-          height="900"
+          width="1440"
+          height="720"
           fetchpriority="high"
         />
-        <span><strong>Burnished Sky Ahead</strong><small>Time, weather, and the hours ahead</small></span>
+        <span><strong>Burnished Sky Ahead</strong><small>All features are free.</small></span>
       </a>
     </section>
     <section class="section">
       <div class="section-heading">
-        <p class="eyebrow">First release</p>
+        <p class="eyebrow">Production {listing.version}</p>
         <h2>Burnished Sky Ahead</h2>
         <p>
-          First made for a Soft Gold Titanium and French Gray Forerunner 970,
-          then carefully adapted for selected round AMOLED Garmin watches.
+          Time, weather, and the things that matter to you. Made for supported AMOLED and MIP watches.
         </p>
       </div>
       <div class="feature-grid">
         <article class="feature">
           <span class="feature-index">01</span>
           <h3>Weather with context</h3>
-          <p>Three forecast points select the shortest useful horizon instead of filling the dial with noise.</p>
+          <p>A forecast that automatically switches between temperature and precipitation chance.</p>
         </article>
         <article class="feature">
           <span class="feature-index">02</span>
-          <h3>Made for AMOLED</h3>
-          <p>A deliberate active composition and a separate low-power display protect clarity in both states.</p>
+          <h3>Room for what matters</h3>
+          <p>Countdown, Days since, Analog and Digital second time zones. Choose separately for day and night.</p>
         </article>
         <article class="feature">
           <span class="feature-index">03</span>
-          <h3>Honest by default</h3>
-          <p>Missing weather or sensor values remain visibly unknown. The watch face never invents data.</p>
+          <h3>Your data fields</h3>
+          <p>Two customizable data fields, with 11 choices.</p>
         </article>
       </div>
     </section>

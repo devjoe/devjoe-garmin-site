@@ -1,53 +1,22 @@
 ---
 import SiteLayout from "../../../layouts/SiteLayout.astro";
 import release from "../../../data/release.json";
+import listing from "../../../data/store-listing.json";
 ---
-
-<SiteLayout
-  title="Roadmap — Burnished Sky Ahead"
-  description="Creator-curated public roadmap for future Burnished Sky Ahead updates."
-  current="roadmap"
->
+<SiteLayout title="Updates — Burnished Sky Ahead" description="What’s new in Burnished Sky Ahead." current="roadmap">
   <div class="page-shell">
     <header class="page-intro">
-      <p class="eyebrow">Creator-curated, released for everyone</p>
-      <h1>Roadmap</h1>
-      <p class="lede">Download milestones, Store reviews, and support messages help inform future free updates; devjoe curates the final scope.</p>
+      <p class="eyebrow">Burnished Sky Ahead · {listing.version}</p>
+      <h1>What’s new.</h1>
+      <p class="lede">All features are free. Your support is welcome.</p>
     </header>
     <section class="content-grid">
-      <aside>Release milestones</aside>
+      <aside>Released for everyone</aside>
       <div class="prose">
-        <div class="callout">
-          <p><strong>Every milestone is for everyone.</strong> Reaching a download target begins evaluation; it does not promise a delivery date or grant an individual unlock, vote, or priority response.</p>
-          <p>Download targets match the public Connect IQ Store tiers—1K+, 10K+, and 50K+—so each milestone can be observed without an unpublished exact count.</p>
-        </div>
-        <div class="milestone-list">
-          {release.milestones.map((milestone) => (
-            <article class="milestone">
-              <div class="milestone-id">{milestone.id}</div>
-              <div>
-                <strong>{milestone.downloads.toLocaleString("en-US")} downloads</strong><br />
-                <span class="status-tag">{milestone.status}</span>
-              </div>
-              <div>
-                <h3>{milestone.feature}</h3>
-                <p>{milestone.description}</p>
-              </div>
-            </article>
-          ))}
-        </div>
-        <h2>How decisions are made</h2>
-        <p>
-          devjoe sets the milestones and final scope while actively reading Store
-          reviews and messages from supporters. Aggregate progress is updated
-          manually. Supporter names and messages remain private unless the person
-          explicitly approves publication.
-        </p>
-        <p>States move from Target not reached → Target reached → In design → In testing → Released.</p>
-        <h2>Optional support stays separate</h2>
-        <p>{release.support.purpose}</p>
-        <div class="callout">
-          <p><strong>No active Ko-fi Goal.</strong> Tips do not purchase, unlock, or guarantee a feature, product, service, or release date. Tip amounts cannot change a feature's milestone state.</p>
+        {listing.whatsNew.map(item => <section><h2>{item.title}</h2>{item.paragraphs.map(text => <p>{text}</p>)}</section>)}
+        <div class="action-row">
+          <a class="button primary" href={release.urls.connectIqStore}>Get it on Connect IQ</a>
+          <a class="button" href="/changelog/">Full release history</a>
         </div>
       </div>
     </section>

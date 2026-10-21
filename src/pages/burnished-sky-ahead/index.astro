@@ -1,175 +1,43 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import release from "../../data/release.json";
-
-const releaseState = release.release.changelog.status === "released"
-  ? "Production release"
-  : "Production candidate";
-
-const gallery = [
-  {
-    src: "/images/burnished-sky-ahead/02-day-night.png",
-    label: "Day & night",
-    copy: "Coordinated materials shift with the sky while the hierarchy stays familiar.",
-  },
-  {
-    src: "/images/burnished-sky-ahead/03-forecast-ahead.png",
-    label: "Forecast ahead",
-    copy: "Three actual clock hours make the precipitation or temperature timeline readable at a glance.",
-  },
-  {
-    src: "/images/burnished-sky-ahead/04-always-on-display.png",
-    label: "Always-on display",
-    copy: "Five restrained ornaments share a purpose-built low-power composition.",
-  },
-  {
-    src: "/images/burnished-sky-ahead/05-weather-frames.png",
-    label: "Weather frames",
-    copy: "Faceted Seal, Simple Circle, or no frame—each keeps weather legible and composed.",
-  },
-];
+import listing from "../../data/store-listing.json";
+const body = listing.description.split("\n").filter(Boolean).slice(5);
+const supportIndex = body.indexOf("Support and FAQ:");
+const paragraphs = body.slice(0, supportIndex);
 ---
-
-<SiteLayout
-  title="Burnished Sky Ahead — Garmin watch face by devjoe"
-  description={release.product.openingSentence}
-  current="product"
->
+<SiteLayout title="Burnished Sky Ahead — Garmin watch face by devjoe" description="Time first, Weather ahead, at a glance. A clean face, with room for what matters to you." current="product">
   <div class="page-shell">
-    <section class="product-hero">
-      <div class="hero-copy product-hero-copy">
-        <p class="eyebrow">Garmin watch face · {release.product.version} {releaseState}</p>
-        <h1>Burnished<br />Sky Ahead</h1>
-        <p>
-          Time first. The hours ahead, at a glance. A refined, highly readable
-          composition for current weather and the next few hours—without turning
-          the screen into a crowded dashboard.
-        </p>
-        <div class="action-row">
-          <a class="button primary" href="/burnished-sky-ahead/devices/">View supported devices</a>
-          <a class="button" href="/burnished-sky-ahead/support/">Get support</a>
-          <a class="button" href={release.urls.connectIqStore}>Get it on Connect IQ</a>
+    <header class="release-hero">
+      <p class="eyebrow">Garmin watch face · {listing.version} Production release</p>
+      <h1 class="sr-only">Burnished Sky Ahead</h1>
+      <img class="release-banner" src={listing.hero} alt="Burnished Sky Ahead on a Forerunner 970, with a light sweeping across the title." width="1440" height="720" fetchpriority="high" />
+      <div class="release-intro">
+        <div>
+          <h2>Time first, Weather ahead, at a glance.</h2>
+          <p class="lede">A clean face, with room for what matters to you.</p>
+          <div class="action-row">
+            <a class="button primary" href={release.urls.connectIqStore}>Get it on Connect IQ</a>
+            <a class="button" href="/burnished-sky-ahead/devices/">Supported watches</a>
+          </div>
+        </div>
+        <div class="release-support">
+          <p><strong>All features are free.</strong><br />Your support is welcome.</p>
+          <p><a href="https://ko-fi.com/devjoe">Ko-fi</a> <span>(Anywhere)</span><br /><a href="https://garmin.devjoe.app/tw-tip">Taiwan support</a> <span>(Taiwan)</span></p>
         </div>
       </div>
-      <figure class="product-hero-art">
-        <img
-          src="/images/burnished-sky-ahead/hero-1440x720.png"
-          alt="Burnished Sky Ahead active watch face shown on a Soft Gold Titanium and French Gray Garmin watch"
-          width="1440"
-          height="720"
-          fetchpriority="high"
-        />
-        <figcaption>Designed as one composition—from AMOLED black and sunlight-readable MIP to the physical bezel.</figcaption>
-      </figure>
+    </header>
+    <section class="release-gallery" aria-label="Explore the watch face">
+      {listing.images.map(item => <img src={item.src} alt={item.alt} width="385" height="560" loading="lazy" />)}
     </section>
-
-    <section class="section product-statement">
-      <div class="section-heading">
-        <p class="eyebrow">A miniature instrument</p>
-        <h2>Clarity first.<br />Character close behind.</h2>
-        <p>
-          Time remains unmistakable. Weather and activity form a restrained
-          hierarchy around it, with warm brass, mineral gray, and moonlit violet
-          details coordinated across day, night, and always-on states.
-        </p>
-      </div>
-      <img
-        class="statement-image"
-        src="/images/burnished-sky-ahead/01-essentials-at-a-glance.png"
-        alt="Burnished Sky Ahead composition showing time, activity, date, current weather, and forecast"
-        width="900"
-        height="900"
-        loading="lazy"
-      />
-    </section>
-
-    <section class="section visual-story" aria-labelledby="visual-story-title">
-      <div class="section-heading">
-        <p class="eyebrow">One face, several useful tempos</p>
-        <h2 id="visual-story-title">Weather with context.</h2>
-        <p>
-          The active face, forecast miniature, AOD, and frame options share one
-          visual language instead of behaving like unrelated widgets.
-        </p>
-      </div>
-      <div class="visual-grid">
-        {gallery.map((item, index) => (
-          <article class="visual-card">
-            <img src={item.src} alt={`${item.label} visual for Burnished Sky Ahead`} width="900" height="900" loading="lazy" />
-            <div class="visual-card-copy">
-              <span>{String(index + 1).padStart(2, "0")}</span>
-              <div>
-                <h3>{item.label}</h3>
-                <p>{item.copy}</p>
-              </div>
-            </div>
-          </article>
-        ))}
-      </div>
-    </section>
-
     <section class="section content-grid">
-      <aside>What it shows</aside>
-      <div class="prose">
-        <h2>Useful density, composed.</h2>
-        <ul>
-          <li>Prominent digital time, date, and English weekday.</li>
-          <li>Battery, cached heart rate, calories, and daily steps.</li>
-          <li>Current Garmin weather, temperature, and a concise condition caption.</li>
-          <li>A contextual three-node RAIN, SNOW, MIX, or TEMP forecast.</li>
-          <li>A compact alarm and Do Not Disturb status rail on supported devices.</li>
-          <li>An optional notification icon and count, Off by default and capped at <code>99+</code>.</li>
-          <li>A purpose-built AMOLED always-on display.</li>
-          <li>Native 64-color MIP faces across selected 240 × 240, 260 × 260, and 280 × 280 watches.</li>
-        </ul>
-        <div class="callout">
-          <p><strong>Missing stays missing.</strong> Unavailable values display as <code>--</code> or an honest weather fallback rather than guessed data.</p>
-        </div>
-
-        <div class="action-row compact-actions">
-          <a class="button" href="/burnished-sky-ahead/forecast/">How to read the forecast</a>
-        </div>
-
-        <h2>The shortest useful horizon.</h2>
-        <p>
-          The forecast miniature chooses RAIN, SNOW, or MIX at a meaningful 3H,
-          6H, or 9H horizon. When no meaningful precipitation appears within nine
-          hours, it shows actual forecast temperatures through TEMP 6H. Each node
-          is labeled with its represented local clock hour, so the timeline can be
-          read without decoding a relative offset.
-        </p>
-
-        <h2>MIP, drawn natively.</h2>
-        <p>
-          The dedicated MIP system covers selected 240 × 240,
-          260 × 260, and 280 × 280 Forerunner, fēnix, Enduro, vívoactive, and
-          legacy-character families. Each native size uses its own 64-color
-          palette, compact typography, and complete three-value 3H forecast
-          instead of scaling down the AMOLED face. Existing AMOLED layouts,
-          Outdoor Brief, Weather Signals, motion, and low-power behavior remain
-          on their isolated paths.
-        </p>
-
-        <h2>Personal, not configurable chaos.</h2>
-        <p>
-          Production defaults are Quoted Time, Faceted Seal, Outdoor Brief Off,
-          Weather Signals Off, and Show notification count Off. Every option stays within the same information
-          architecture, so a visual preference never compromises the meaning of
-          the dial. AMOLED-only options never appear on MIP.
-        </p>
-
-        <h2>Free for everyone.</h2>
-        <p>
-          Every download and Store review helps the project grow. Optional Tips
-          help cover Garmin device testing, development tools, maintenance, and
-          continued improvements. Tips do not purchase, unlock, or guarantee any
-          feature, product, service, or release date; tip amounts are separate
-          from the roadmap, and there is no active Ko-fi Goal.
-        </p>
+      <aside>Time, weather & what matters</aside>
+      <div class="prose store-copy">
+        {paragraphs.map(text => <p class:list={{ "touch-tip": text.startsWith("Tip:"), "feature-summary": text.startsWith("•") }}>{text.replace(/^• /, "")}</p>)}
         <div class="action-row">
-          <a class="button primary" href={release.support.url}>Support on Ko-fi</a>
-          <a class="button" href="/burnished-sky-ahead/roadmap/">View the public roadmap</a>
-          <a class="button" href="/burnished-sky-ahead/privacy/">Read the privacy notice</a>
+          <a class="button" href="/burnished-sky-ahead/support/">Support and FAQ</a>
+          <a class="button" href="/burnished-sky-ahead/forecast/">Read the forecast</a>
+          <a class="button" href="/changelog/">What’s new</a>
         </div>
       </div>
     </section>

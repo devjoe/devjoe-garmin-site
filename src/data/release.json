@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-21T07:02:49.714Z",
+  "generatedAt": "2026-10-21T05:03:09Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
     "name": "Burnished Sky Ahead",
     "shortName": "Sky Ahead",
-    "version": "1.9.2",
+    "version": "1.11.0",
     "category": "Watch Face",
-    "openingSentence": "Time first. The hours ahead, at a glance.",
+    "openingSentence": "Time first, Weather ahead, at a glance.",
     "launchLanguages": [
       "eng"
     ]
@@ -16,12 +16,11 @@
   "release": {
     "stage": "production",
     "changelog": {
-      "version": "1.9.2",
+      "version": "1.11.0",
       "status": "released",
       "summary": [
-        "Improved reliability when reading and saving watch-face settings.",
-        "On-watch settings now refresh when returning from option menus.",
-        "Existing settings, color themes, and supported watches are preserved."
+        "Countdown, Days since, and analog or digital second time zones bring your plans and people onto your watch face. Add your own label, choose different Widgets for day and night, or keep the space clear. World clocks adjust automatically for daylight saving.",
+        "Clearer reading on AMOLED and MIP, with refined text sizes and more balanced MIP weekday, forecast and date typography."
       ]
     }
   },
@@ -495,28 +494,5 @@
     "purpose": "Optional tips help cover Garmin device testing, development tools, maintenance, and continued improvements.",
     "goalEnabled": false
   },
-  "milestones": [
-    {
-      "id": "M1",
-      "downloads": 1000,
-      "feature": "Two additional curated palettes",
-      "description": "Two more carefully tuned colorways, released as a free update for every user.",
-      "status": "Target not reached"
-    },
-    {
-      "id": "M2",
-      "downloads": 10000,
-      "feature": "Additional curated data-panel presets",
-      "description": "More considered ways to arrange useful watch data without turning the face into a dashboard.",
-      "status": "Target not reached"
-    },
-    {
-      "id": "M3",
-      "downloads": 50000,
-      "feature": "Weather Miniature Motion",
-      "description": "Optional, restrained motion limited to the weather region on the active face. AOD remains static.",
-      "status": "Target not reached"
-    }
-  ],
   "independence": "Independent developer product; not affiliated with or endorsed by Garmin."
 }
