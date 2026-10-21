@@ -49,6 +49,10 @@ const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
           <li>The icon identifies the selected forecast mode. Missing data remains <code>--</code>.</li>
         </ul>
         <p><a href="/burnished-sky-ahead/forecast/">See the visual three-node forecast guide.</a></p>
+        <p>On supported touch watches, long-press the lower-left forecast to switch back to temperature when rain chance is shown.</p>
+        <h2>Show or hide your Widget</h2>
+        <p>On supported touch watches, enable "Hold Widget to show / hide" in settings, then long-press the left Widget area. Long-press the same area to show it again.</p>
+        <p>Choose Countdown, Days since, Analog or Digital second time zones separately for day and night. Widget names support English letters and selected symbols.</p>
         <h2>Status rail</h2>
         <p>
           On supported devices, compact icons beside the time show alarm and Do
@@ -69,6 +73,7 @@ const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
           <li><strong>Weather Signals:</strong> Off or On on supported AMOLED watches.</li>
           <li><strong>Show notification count:</strong> Off or On; Off by default.</li>
         </ul>
+        <p>Choose two custom data fields from 11 options, plus separate day and night color themes and Widgets.</p>
         <h2>Report a problem</h2>
         <p>
           Include the device model, firmware, Burnished Sky Ahead version,
@@ -87,12 +92,12 @@ const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
           Burnished Sky Ahead is free. {release.support.purpose}
         </p>
         <div class="callout">
-          <p><strong>Tips are voluntary.</strong> They do not purchase, unlock, or guarantee any feature, product, service, or release date. There is no active Ko-fi Goal, and tip amounts are separate from the roadmap.</p>
+          <p><strong>Tips are voluntary.</strong> They do not purchase, unlock, or guarantee any feature, product, service, or release date. </p>
         </div>
         {release.support.url ? (
           <div class="action-row">
             <a class="button" href={release.support.url}>Leave a tip on Ko-fi</a>
-            <a class="button" href="/burnished-sky-ahead/roadmap/">View the public roadmap</a>
+            <a class="button" href="/burnished-sky-ahead/roadmap/">See what’s new</a>
           </div>
         ) : (
           <p class="status-tag">Tip link will be published at launch</p>

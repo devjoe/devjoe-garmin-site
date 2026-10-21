@@ -17,7 +17,7 @@ const {
   title,
   description,
   current = "",
-  socialImage = "/images/burnished-sky-ahead/hero-1440x720.png",
+  socialImage = "/images/burnished-sky-ahead/1.11.0/hero.gif",
   socialImageAlt = "Burnished Sky Ahead watch face on a Soft Gold Titanium and French Gray Garmin watch",
   lang = "en",
   showGarminDisclaimer = true,
@@ -28,7 +28,7 @@ const socialImageUrl = new URL(socialImage, Astro.site);
 const navigation = [
   { href: "/burnished-sky-ahead/", label: isTraditionalChinese ? "錶面" : "Sky Ahead", locale: isTraditionalChinese ? "(EN)" : "", id: "product" },
   { href: "/burnished-sky-ahead/devices/", label: isTraditionalChinese ? "裝置" : "Devices", locale: isTraditionalChinese ? "(EN)" : "", id: "devices" },
-  { href: "/burnished-sky-ahead/roadmap/", label: isTraditionalChinese ? "更新規劃" : "Roadmap", locale: isTraditionalChinese ? "(EN)" : "", id: "roadmap" },
+  { href: "/burnished-sky-ahead/roadmap/", label: isTraditionalChinese ? "最新資訊" : "Updates", locale: isTraditionalChinese ? "(EN)" : "", id: "roadmap" },
   { href: isTraditionalChinese ? "/zh-tw/burnished-sky-ahead/support/" : "/burnished-sky-ahead/support/", label: isTraditionalChinese ? "台灣支持頁" : "Support", locale: "", id: "support" },
 ];
 ---

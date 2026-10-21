@@ -1,6 +1,7 @@
 ---
 import SiteLayout from "../../layouts/SiteLayout.astro";
 import release from "../../data/release.json";
+import listing from "../../data/store-listing.json";
 ---
 
 <SiteLayout title="Changelog — devjoe Garmin" description="Release history for devjoe Garmin apps.">
@@ -14,12 +15,12 @@ import release from "../../data/release.json";
       <aside>Burnished Sky Ahead</aside>
       <div class="prose">
         <p class="status-tag">Production · current release {release.product.version}</p>
-        <h2>{release.release.changelog.version} — Settings reliability</h2>
-        <p><strong>Released September 19, 2026</strong></p>
-        <ul>
-          {release.release.changelog.summary.map((item) => <li>{item}</li>)}
-        </ul>
-        <p>Remaining error reports are still being investigated.</p>
+        <p><strong>1.11.0 released October 21, 2026</strong></p>
+        {listing.whatsNew.map(item => <section><h2>{item.title}</h2>{item.paragraphs.map(text => <p>{text}</p>)}</section>)}
+        <h2>Earlier releases</h2>
+        <p class="status-tag">Production · earlier release 1.9.2</p>
+        <h3>1.9.2 — Settings reliability</h3>
+        <p>Improved reading, saving and refreshing watch-face settings.</p>
         <p class="status-tag">Production · earlier release 1.9.1</p>
         <h2>1.9.1 — Clearer recovery instructions</h2>
         <p><strong>Released September 18, 2026</strong></p>
