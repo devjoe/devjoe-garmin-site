@@ -1,0 +1,916 @@
+{
+  "version": "1.13.0",
+  "updated": "2026-10-29",
+  "devices": [
+    {
+      "id": "fr970",
+      "name": "Forerunner 970",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fr170",
+      "name": "Forerunner 170",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fr70",
+      "name": "Forerunner 70",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fr265",
+      "name": "Forerunner 265",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fr57042mm",
+      "name": "Forerunner 570 42mm",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fr57047mm",
+      "name": "Forerunner 570 47mm",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "instinct3amoled50mm",
+      "name": "Instinct 3 AMOLED 50mm",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": false
+      }
+    },
+    {
+      "id": "fr265s",
+      "name": "Forerunner 265S",
+      "display": "AMOLED",
+      "displayProfile": "round-360x360",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "venu2s",
+      "name": "Venu 2S",
+      "display": "AMOLED",
+      "displayProfile": "round-360x360",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix943mm",
+      "name": "fēnix 9 43mm",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix947mm",
+      "name": "fēnix 9 47/51mm",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix9pro43mm",
+      "name": "fēnix 9 Pro 43mm",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix9pro47mm",
+      "name": "fēnix 9 Pro 47mm",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix9pro51mm",
+      "name": "fēnix 9 Pro 51mm",
+      "display": "AMOLED",
+      "displayProfile": "round-466x466",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix9prosolar47mm",
+      "name": "fēnix 9 Pro Solar 47mm",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix9prosolar51mm",
+      "name": "fēnix 9 Pro Solar 51mm",
+      "display": "MIP",
+      "displayProfile": "round-280x280",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix843mm",
+      "name": "fēnix 8 43mm",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix847mm",
+      "name": "fēnix 8 47/51mm · tactix 8 47/51mm · quatix 8 47/51mm",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenixe",
+      "name": "fēnix E",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fr965",
+      "name": "Forerunner 965",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix8pro47mm",
+      "name": "fēnix 8 Pro 47/51mm · MicroLED · quatix 8 Pro 47/51mm",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "epix2pro42mm",
+      "name": "epix Pro (Gen 2) 42mm",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "epix2pro47mm",
+      "name": "epix Pro (Gen 2) 47mm · quatix 7 Pro",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "epix2pro51mm",
+      "name": "epix Pro (Gen 2) 51mm · D2 Mach 1 Pro · tactix 7 AMOLED",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "venu441mm",
+      "name": "Venu 4 41mm",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "venu445mm",
+      "name": "Venu 4 45mm · D2 Air X15",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "venu3",
+      "name": "Venu 3",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "venu3s",
+      "name": "Venu 3S",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "vivoactive6",
+      "name": "vívoactive 6",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fr170m",
+      "name": "Forerunner 170 Music",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "instinct3amoled45mm",
+      "name": "Instinct 3 AMOLED 45mm",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": false
+      }
+    },
+    {
+      "id": "fr165",
+      "name": "Forerunner 165",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fr165m",
+      "name": "Forerunner 165 Music",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "venu2",
+      "name": "Venu 2",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "venu2plus",
+      "name": "Venu 2 Plus",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "vivoactive5",
+      "name": "vívoactive 5",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "epix2",
+      "name": "epix (Gen 2) · quatix 7 Sapphire",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fr255",
+      "name": "Forerunner 255",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "fr255m",
+      "name": "Forerunner 255 Music",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "fr955",
+      "name": "Forerunner 955 / 955 Solar",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix7",
+      "name": "fēnix 7 / quatix 7",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix7pro",
+      "name": "fēnix 7 Pro",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix7pronowifi",
+      "name": "fēnix 7 Pro Solar (no Wi-Fi)",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix8solar47mm",
+      "name": "fēnix 8 Solar 47mm",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "enduro3",
+      "name": "Enduro 3",
+      "display": "MIP",
+      "displayProfile": "round-280x280",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix7x",
+      "name": "fēnix 7X / tactix 7 / quatix 7X Solar / Enduro 2",
+      "display": "MIP",
+      "displayProfile": "round-280x280",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix7xpro",
+      "name": "fēnix 7X Pro",
+      "display": "MIP",
+      "displayProfile": "round-280x280",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix7xpronowifi",
+      "name": "fēnix 7X Pro Solar (no Wi-Fi)",
+      "display": "MIP",
+      "displayProfile": "round-280x280",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix8solar51mm",
+      "name": "fēnix 8 Solar 51mm / tactix 8 Solar 51mm",
+      "display": "MIP",
+      "displayProfile": "round-280x280",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fr245m",
+      "name": "Forerunner 245 Music",
+      "display": "MIP",
+      "displayProfile": "round-240x240",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": false,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "fenix6",
+      "name": "fēnix 6 / 6 Solar / 6 Dual Power",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": false,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "fenix6pro",
+      "name": "fēnix 6 Pro / 6 Sapphire / 6 Pro Solar / quatix 6",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": false,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "vivoactive4",
+      "name": "vívoactive 4",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": false,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "legacyherofirstavenger",
+      "name": "First Avenger",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": false,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "legacysagadarthvader",
+      "name": "Darth Vader",
+      "display": "MIP",
+      "displayProfile": "round-260x260",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": false,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "approachs7042mm",
+      "name": "Approach S70 42mm",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "approachs7047mm",
+      "name": "Approach S70 47mm",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "descentmk343mm",
+      "name": "Descent Mk3 / Mk3i 43mm",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "descentmk351mm",
+      "name": "Descent Mk3i 51mm",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "marq2",
+      "name": "MARQ (Gen 2) family",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "marq2aviator",
+      "name": "MARQ (Gen 2) Aviator",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "d2mach2",
+      "name": "D2 Mach 2",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "d2mach2pro",
+      "name": "D2 Mach 2 Pro",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "descentmk2",
+      "name": "Descent Mk2 / Mk2i",
+      "display": "MIP",
+      "displayProfile": "round-280x280",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": false,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "enduro4",
+      "name": "Enduro 4",
+      "display": "MIP",
+      "displayProfile": "round-280x280",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "approachs7243mm",
+      "name": "Approach S72 43mm",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "approachs7247mm",
+      "name": "Approach S72 47mm",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "marq3",
+      "name": "MARQ (Gen 3) family",
+      "display": "AMOLED",
+      "displayProfile": "round-454x454",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "fr255s",
+      "name": "Forerunner 255S",
+      "display": "MIP",
+      "displayProfile": "round-218x218",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "fr255sm",
+      "name": "Forerunner 255S Music",
+      "display": "MIP",
+      "displayProfile": "round-218x218",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    }
+  ]
+}

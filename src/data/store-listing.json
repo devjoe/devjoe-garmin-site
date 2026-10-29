@@ -1,8 +1,28 @@
 {
-  "version": "1.11.0",
-  "published": "2026-10-21",
-  "description": "Time first, Weather ahead, at a glance.\nA clean face, with room for what matters to you.\n\nAll features are free. Your support is welcome.\nhttps://ko-fi.com/devjoe (Anywhere)\nhttps://garmin.devjoe.app/tw-tip (Taiwan)\n\n• A forecast that automatically switches between temperature and precipitation chance.\nTip: On supported touch watches, long-press the lower-left forecast to switch back to temperature when rain chance is shown.\n\nAMOLED adds Weather Signals, Outdoor Brief and multiple Always-On Display styles. The temperature outlook covers 6 hours; precipitation adjusts to 3, 6 or 9 hours. Widgets, Weather Signals and Outdoor Brief are hidden in Always-On Display.\n\nMIP uses dedicated layouts and a three-value, 3-hour outlook.\n\nCount down to your next adventure. Keep track of days together. Keep someone far away a little closer. Add a Widget—or leave the space clear.\n\n• Four Widget styles: Countdown, Days since, Analog and Digital second time zones. Choose separately for day and night.\nWidget names support English letters and selected symbols.\nTip: On supported touch watches, enable \"Hold Widget to show / hide\" in settings, then long-press the left Widget area. Long-press the same area to show it again.\n\n• Two customizable data fields, with 11 choices.\n• Four color themes, with separate day and night choices.\n• A compact status rail for alarms, Do Not Disturb and notifications.\n\nWeather and some readings depend on Garmin data and device setup. Unavailable readings show --.\n\nSupport and FAQ:\nhttps://garmin.devjoe.app/burnished-sky-ahead/support/",
+  "version": "1.13.0",
+  "published": "2026-10-29",
+  "description": "Time first, Weather ahead, at a glance.\nA clean face, with room for what matters to you.\n\nAll features are free. Your support is welcome.\nhttps://ko-fi.com/devjoe (Anywhere)\nhttps://garmin.devjoe.app/tw-tip (Taiwan)\n\n• A forecast that automatically switches between temperature and precipitation chance.\nTip: On supported touch watches, long-press the lower-left forecast to switch back to temperature when rain chance is shown.\n\nAMOLED adds Weather Signals, Outdoor Brief and multiple Always-On Display styles. The temperature outlook covers 6 hours; precipitation adjusts to 3, 6 or 9 hours. Widgets, Weather Signals and Outdoor Brief are hidden in Always-On Display.\n\nMIP uses dedicated layouts and a three-value, 3-hour outlook. Selected MIP watches also offer optional strong-wind signals with wind direction.\n\n• English or Traditional Chinese weather and weekdays on supported watches. English is the default.\n\nCount down to your next adventure. Keep track of days together. Keep someone far away a little closer. Add a Widget—or leave the space clear.\n\n• Four Widget styles: Countdown, Days since, Analog and Digital second time zones. Choose separately for day and night.\nWidget names support English letters and selected symbols.\nTip: On supported touch watches, enable \"Hold Widget to show / hide\" in settings, then long-press the left Widget area. Long-press the same area to show it again.\n\n• Two customizable data fields for steps, distance, weekly run/ride totals and more. Weekly swim distance is available on supported watches, using activities saved on the watch.\n• Four color themes, with separate day and night choices.\n• A compact status rail for alarms, Do Not Disturb and notifications.\n\nWeather and some readings depend on Garmin data and device setup. Unavailable readings show --.\n\nSupport and FAQ:\nhttps://garmin.devjoe.app/burnished-sky-ahead/support/",
   "whatsNew": [
+    {
+      "title": "1.13.0 — Wind direction & more ways to track your week",
+      "paragraphs": [
+        "Strong-wind Weather Signals now show wind direction, with support expanded to selected MIP watches. Weekly swim distance is available on more compatible watches, and MIP digital Widget digits are clearer."
+      ]
+    },
+    {
+      "title": "1.12.1 — Forerunner 255S joins the family",
+      "paragraphs": [
+        "Now available on Forerunner 255S and 255S Music, with optional Traditional Chinese weather and weekdays. English remains the default."
+      ]
+    },
+    {
+      "title": "1.12 — More personal, easier to read",
+      "paragraphs": [
+        "Choose English or Traditional Chinese weather and weekdays on supported watches. Widget names now adapt more naturally to the available space.",
+        "Add weekly swim distance from activities stored on your Forerunner 970. Support expands to Descent Mk2/Mk2i, Enduro 4, Approach S72 (43/47 mm) and MARQ Gen 3.",
+        "Note: Some FR970 updates may briefly show IQ!; leaving the watch face and returning can restore it."
+      ]
+    },
     {
       "title": "1.11 — Keep what matters close",
       "paragraphs": [
@@ -48,8 +68,8 @@
       "alt": "One place, your choice: analog and digital clocks, Countdown, Days since, or no Widget."
     },
     {
-      "src": "/images/burnished-sky-ahead/1.11.0/screenshot-5.gif",
-      "alt": "Your data fields: two customizable fields with 11 choices."
+      "src": "/images/burnished-sky-ahead/1.13.0/screenshot-5.gif",
+      "alt": "Your data fields: choose two fields, including weekly swim distance on supported watches."
     }
   ]
 }
