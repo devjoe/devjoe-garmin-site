@@ -22,7 +22,10 @@ const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
     <section class="content-grid">
       <aside>Quick checks</aside>
       <div class="prose">
+        <h2>A setting is missing on my watch</h2>
+        <p>Options depend on the model. <a href="/burnished-sky-ahead/devices/">Find your watch in the feature comparison</a> to check weekly swim, wind signals, Chinese weather and long-press controls. Confirm that Connect IQ shows version {release.product.version} for the watch you’re configuring.</p>
         <h2>Watch face cannot load</h2>
+        <p>A brief IQ! has been observed on Forerunner 970 during some updates. Leave the watch face and return once. If it persists, try the steps below and report your model, firmware and version; repeated IQ! errors should not be ignored.</p>
         <p>If the preparing or restoring screen persists, or recovery steps appear:</p>
         <ol>
           <li>Select a built-in Garmin watch face.</li>
@@ -70,10 +73,16 @@ const issuesUrl = "https://github.com/devjoe/devjoe-garmin-site/issues";
           <li><strong>AOD ornament:</strong> Three-rail, Victory Laurel, Quoted Time, None, or Daily Rotation.</li>
           <li><strong>Weather frame:</strong> Faceted Seal, Simple Circle, or None.</li>
           <li><strong>Outdoor Brief:</strong> Off, Always on, Toggle by long press, or Smart on supported AMOLED watches.</li>
-          <li><strong>Weather Signals:</strong> Off or On on supported AMOLED watches.</li>
+          <li><strong>Weather Signals:</strong> Off or On on AMOLED watches, and strong-wind signals on selected MIP watches.</li>
+          <li><strong>Weather and weekday language:</strong> English or Traditional Chinese; English by default. The numeric date stays unchanged.</li>
           <li><strong>Show notification count:</strong> Off or On; Off by default.</li>
         </ul>
-        <p>Choose two custom data fields from 11 options, plus separate day and night color themes and Widgets.</p>
+        <p>Choose two custom data fields, plus separate day and night color themes and Widgets. Field choices vary by watch.</p>
+        <h2>Weekly swim distance</h2>
+        <p>On supported models, choose “Weekly swim (on watch)” for either custom field. It uses swimming activities saved on this watch and your watch’s week-start setting. It is not the full Garmin Connect account total.</p>
+        <p>A valid week with no saved swimming shows 0; unavailable or incomplete history shows <code>--</code>. Real pool, open-water and multisport feedback is still welcome. Include the watch model and expected weekly distance, without posting private activity files or locations.</p>
+        <h2>Wind direction</h2>
+        <p>The arrow shows where the wind is blowing to, with north at the top of the watch. NOW uses current weather; LATER uses the selected forecast. On MIP, Weather Signals covers strong wind only and is available on selected models.</p>
         <h2>Report a problem</h2>
         <p>
           Include the device model, firmware, Burnished Sky Ahead version,

@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-21T05:03:09Z",
+  "generatedAt": "2026-10-29T15:20:00.000Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
     "name": "Burnished Sky Ahead",
     "shortName": "Sky Ahead",
-    "version": "1.11.0",
+    "version": "1.13.0",
     "category": "Watch Face",
     "openingSentence": "Time first, Weather ahead, at a glance.",
     "launchLanguages": [
@@ -16,11 +16,10 @@
   "release": {
     "stage": "production",
     "changelog": {
-      "version": "1.11.0",
+      "version": "1.13.0",
       "status": "released",
       "summary": [
-        "Countdown, Days since, and analog or digital second time zones bring your plans and people onto your watch face. Add your own label, choose different Widgets for day and night, or keep the space clear. World clocks adjust automatically for daylight saving.",
-        "Clearer reading on AMOLED and MIP, with refined text sizes and more balanced MIP weekday, forecast and date typography."
+        "Strong-wind Weather Signals now show wind direction, with support expanded to selected MIP watches. Weekly swim distance is available on more compatible watches, and MIP digital Widget digits are clearer."
       ]
     }
   },
@@ -37,379 +36,421 @@
       "id": "fr970",
       "name": "Forerunner 970",
       "displayProfile": "round-454x454",
-      "evidence": "Physically tested"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr170",
       "name": "Forerunner 170",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr70",
       "name": "Forerunner 70",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr265",
       "name": "Forerunner 265",
       "displayProfile": "round-416x416",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr57042mm",
       "name": "Forerunner 570 42mm",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr57047mm",
       "name": "Forerunner 570 47mm",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "instinct3amoled50mm",
       "name": "Instinct 3 AMOLED 50mm",
       "displayProfile": "round-416x416",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr265s",
       "name": "Forerunner 265S",
       "displayProfile": "round-360x360",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "venu2s",
       "name": "Venu 2S",
       "displayProfile": "round-360x360",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix943mm",
       "name": "fēnix 9 43mm",
       "displayProfile": "round-416x416",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix947mm",
       "name": "fēnix 9 47/51mm",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix9pro43mm",
       "name": "fēnix 9 Pro 43mm",
       "displayProfile": "round-416x416",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix9pro47mm",
       "name": "fēnix 9 Pro 47mm",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix9pro51mm",
       "name": "fēnix 9 Pro 51mm",
       "displayProfile": "round-466x466",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix9prosolar47mm",
       "name": "fēnix 9 Pro Solar 47mm",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix9prosolar51mm",
       "name": "fēnix 9 Pro Solar 51mm",
       "displayProfile": "round-280x280",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix843mm",
       "name": "fēnix 8 43mm",
       "displayProfile": "round-416x416",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix847mm",
       "name": "fēnix 8 47/51mm · tactix 8 47/51mm · quatix 8 47/51mm",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenixe",
       "name": "fēnix E",
       "displayProfile": "round-416x416",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr965",
       "name": "Forerunner 965",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix8pro47mm",
       "name": "fēnix 8 Pro 47/51mm · MicroLED · quatix 8 Pro 47/51mm",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "epix2pro42mm",
       "name": "epix Pro (Gen 2) 42mm",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "epix2pro47mm",
       "name": "epix Pro (Gen 2) 47mm · quatix 7 Pro",
       "displayProfile": "round-416x416",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "epix2pro51mm",
       "name": "epix Pro (Gen 2) 51mm · D2 Mach 1 Pro · tactix 7 AMOLED",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "venu441mm",
       "name": "Venu 4 41mm",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "venu445mm",
       "name": "Venu 4 45mm · D2 Air X15",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "venu3",
       "name": "Venu 3",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "venu3s",
       "name": "Venu 3S",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "vivoactive6",
       "name": "vívoactive 6",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr170m",
       "name": "Forerunner 170 Music",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "instinct3amoled45mm",
       "name": "Instinct 3 AMOLED 45mm",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr165",
       "name": "Forerunner 165",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr165m",
       "name": "Forerunner 165 Music",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "venu2",
       "name": "Venu 2",
       "displayProfile": "round-416x416",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "venu2plus",
       "name": "Venu 2 Plus",
       "displayProfile": "round-416x416",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "vivoactive5",
       "name": "vívoactive 5",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "epix2",
       "name": "epix (Gen 2) · quatix 7 Sapphire",
       "displayProfile": "round-416x416",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr255",
       "name": "Forerunner 255",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr255m",
       "name": "Forerunner 255 Music",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr955",
       "name": "Forerunner 955 / 955 Solar",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix7",
       "name": "fēnix 7 / quatix 7",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix7pro",
       "name": "fēnix 7 Pro",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix7pronowifi",
       "name": "fēnix 7 Pro Solar (no Wi-Fi)",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix8solar47mm",
       "name": "fēnix 8 Solar 47mm",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "enduro3",
       "name": "Enduro 3",
       "displayProfile": "round-280x280",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix7x",
       "name": "fēnix 7X / tactix 7 / quatix 7X Solar / Enduro 2",
       "displayProfile": "round-280x280",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix7xpro",
       "name": "fēnix 7X Pro",
       "displayProfile": "round-280x280",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix7xpronowifi",
       "name": "fēnix 7X Pro Solar (no Wi-Fi)",
       "displayProfile": "round-280x280",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix8solar51mm",
       "name": "fēnix 8 Solar 51mm / tactix 8 Solar 51mm",
       "displayProfile": "round-280x280",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fr245m",
       "name": "Forerunner 245 Music",
       "displayProfile": "round-240x240",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix6",
       "name": "fēnix 6 / 6 Solar / 6 Dual Power",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "fenix6pro",
       "name": "fēnix 6 Pro / 6 Sapphire / 6 Pro Solar / quatix 6",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "vivoactive4",
       "name": "vívoactive 4",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "legacyherofirstavenger",
       "name": "First Avenger",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "legacysagadarthvader",
       "name": "Darth Vader",
       "displayProfile": "round-260x260",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "approachs7042mm",
       "name": "Approach S70 42mm",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "approachs7047mm",
       "name": "Approach S70 47mm",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "descentmk343mm",
       "name": "Descent Mk3 / Mk3i 43mm",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "descentmk351mm",
       "name": "Descent Mk3i 51mm",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "marq2",
       "name": "MARQ (Gen 2) family",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "marq2aviator",
       "name": "MARQ (Gen 2) Aviator",
       "displayProfile": "round-390x390",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "d2mach2",
       "name": "D2 Mach 2",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
     },
     {
       "id": "d2mach2pro",
       "name": "D2 Mach 2 Pro",
       "displayProfile": "round-454x454",
-      "evidence": "Simulator validated"
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "descentmk2",
+      "name": "Descent Mk2 / Mk2i",
+      "displayProfile": "round-280x280",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "enduro4",
+      "name": "Enduro 4",
+      "displayProfile": "round-280x280",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "approachs7243mm",
+      "name": "Approach S72 43mm",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "approachs7247mm",
+      "name": "Approach S72 47mm",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "marq3",
+      "name": "MARQ (Gen 3) family",
+      "displayProfile": "round-454x454",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "fr255s",
+      "name": "Forerunner 255S",
+      "displayProfile": "round-218x218",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "fr255sm",
+      "name": "Forerunner 255S Music",
+      "displayProfile": "round-218x218",
+      "evidence": "Simulator validated; physical evidence varies by model"
     }
   ],
   "settings": [

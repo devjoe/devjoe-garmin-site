@@ -1,45 +1,92 @@
 ---
 import SiteLayout from "../../../layouts/SiteLayout.astro";
 import release from "../../../data/release.json";
-
-const releaseState = release.release.changelog.status === "released"
-  ? "released"
-  : "candidate";
+import matrix from "../../../data/device-features.json";
+const watches = [...matrix.devices].sort((a, b) => a.name.localeCompare(b.name));
+const initial = "fr970";
+const yes = (value: boolean) => value ? "Yes" : "—";
+const wind = (watch: typeof watches[number]) => watch.features.wind
+  ? watch.display === "MIP" ? "Strong wind only" : "Full Weather Signals"
+  : "Not available";
 ---
-
-<SiteLayout
-  title="Supported devices — Burnished Sky Ahead"
-  description="Launch devices and verification evidence for Burnished Sky Ahead."
-  current="devices"
->
+<SiteLayout title="Features by watch — Burnished Sky Ahead" description="Find your watch and check weekly swim, Chinese weather, wind signals and long-press controls." current="devices">
   <div class="page-shell">
     <header class="page-intro">
-      <p class="eyebrow">Version {release.product.version}</p>
-      <h1>Supported devices</h1>
-      <p class="lede">Every {releaseState} target passes its native build and visual family gates. Evidence labels keep physical review distinct from Simulator validation.</p>
+      <p class="eyebrow">Production {matrix.version}</p>
+      <h1>Your watch. Your features.</h1>
+      <p class="lede">Find out what’s available on your model.</p>
     </header>
-    <section class="content-grid">
-      <aside>{release.devices.length} Connect IQ product IDs</aside>
+    <section class="watch-picker" aria-label="Features by watch">
+      <label for="watch-model">Choose your watch</label>
+      <select id="watch-model">
+        {watches.map(watch => <option value={watch.id} selected={watch.id === initial}>{watch.name}</option>)}
+      </select>
+      <div aria-live="polite" aria-atomic="true">
+        {watches.map(watch => <article class="feature-card" data-watch={watch.id} hidden={watch.id !== initial}>
+          <p class="eyebrow">{watch.display} · {watch.displayProfile.replace("round-", "").replace("x", " × ")} px</p>
+          <h2>{watch.name}</h2>
+          <dl class="watch-feature-list">
+            <div><dt>Chinese weather & weekdays</dt><dd>{watch.features.weatherChinese ? "Available · English by default" : "Not available"}</dd></div>
+            <div><dt>Weekly swim distance</dt><dd>{watch.features.swim ? "Available · saved watch activities" : "Not available"}</dd></div>
+            <div><dt>Wind direction signals</dt><dd>{wind(watch)}</dd></div>
+            <div><dt>Outdoor Brief</dt><dd>{watch.features.outdoorBrief ? "Available" : "Not available"}</dd></div>
+            <div><dt>Long-press controls</dt><dd>{watch.features.touch ? "Widget visibility & rain / temperature" : "Not available"}</dd></div>
+          </dl>
+          <p class="feature-note">{watch.features.touch ? 'To hide or show a Widget, first enable “Hold Widget to show / hide” in settings. When rain chance is shown, hold the lower-left forecast to switch back to temperature.' : 'You can still choose your Widget in the Connect IQ settings. These long-press actions are not enabled on this model.'}</p>
+        </article>)}
+      </div>
+      <noscript><p>Open the full comparison below to check every model without JavaScript.</p></noscript>
+    </section>
+    <section class="section content-grid">
+      <aside>A few useful details</aside>
       <div class="prose">
-        <div class="device-list">
-          {release.devices.map((device) => (
-            <article class="device-row">
-              <p><strong>{device.name}</strong></p>
-              <p class="profile">{device.displayProfile.replace("round-", "").replace("x", " × ")} px</p>
-              <p class:list={["evidence", { physical: device.evidence.includes("physical") }]}>{device.evidence}</p>
-            </article>
-          ))}
-        </div>
-        <div class="callout">
-          <p>Some Connect IQ product IDs map to multiple marketed device names. Simulator validation is product-specific acceptance evidence, not a claim of hands-on physical testing. Forerunner 970 is the AMOLED physical reference and Forerunner 245 Music supplied physical MIP Beta evidence; the new 260 × 260 and 280 × 280 families remain Simulator-validated until field reports arrive.</p>
-        </div>
-        <p>
-          Native MIP support spans the listed 240 × 240,
-          260 × 260, and 280 × 280 families, including Forerunner 245 Music,
-          fēnix 6, vívoactive 4, Enduro 3, and fēnix 7X families. Forerunner 255S,
-          Approach S62, and unlisted MIP devices remain unsupported.
-        </p>
+        <p>All listed watches offer Widgets and two customizable data fields. The available field choices vary by model. English and Traditional Chinese apply to weather and weekdays; the numeric date stays unchanged.</p>
+        <p>Weekly swim uses activities saved on the watch, not an account-wide Garmin Connect total. Missing or incomplete data shows <code>--</code>. We’re still gathering real swimming feedback.</p>
+        <p>Weather Signals are optional and off by default. Supported MIP watches show strong wind only; AMOLED watches offer the full set. Arrows show where the wind is blowing <strong>to</strong>, with north at the top of the watch.</p>
+        <p>A touch screen alone does not guarantee long-press support. Use the model’s result above. Outdoor Brief is limited to the AMOLED display family, including compatible MicroLED variants.</p>
+        <p>Forerunner 255S and 255S Music are supported, including Chinese weather and weekdays. Forerunner 245 Music has Chinese weather and weekdays, but no weekly swim, wind signals or long-press controls.</p>
+        <div class="action-row"><a class="button" href="/burnished-sky-ahead/support/">Settings and help</a><a class="button" href={release.urls.connectIqStore}>Check Connect IQ compatibility</a></div>
       </div>
     </section>
+    <details class="all-models">
+      <summary>Compare all supported watches</summary>
+      <p>Yes = available; — = not available. Wind on MIP means strong-wind signals only.</p>
+      <div class="table-scroll" role="region" aria-label="Scrollable watch feature comparison" tabindex="0">
+        <table><caption>Burnished Sky Ahead {matrix.version} feature availability</caption><thead><tr><th scope="col">Watch</th><th scope="col">Display</th><th scope="col">Chinese</th><th scope="col">Swim</th><th scope="col">Wind</th><th scope="col">Outdoor Brief</th><th scope="col">Long press</th></tr></thead><tbody>
+          {watches.map(watch => <tr><th scope="row">{watch.name}</th><td>{watch.display}</td><td>{yes(watch.features.weatherChinese)}</td><td>{yes(watch.features.swim)}</td><td>{yes(watch.features.wind)}</td><td>{yes(watch.features.outdoorBrief)}</td><td>{yes(watch.features.touch)}</td></tr>)}
+        </tbody></table>
+      </div>
+      <p class="feature-note">Availability is checked against the released package. Related models may share one entry. Simulator validation and testing on selected physical watches do not mean every listed watch has been tested in person. Connect IQ determines compatibility with your exact model and firmware.</p>
+    </details>
   </div>
 </SiteLayout>
+<script>
+  const select = document.querySelector<HTMLSelectElement>("#watch-model");
+  const update = () => document.querySelectorAll<HTMLElement>("[data-watch]").forEach(card => {
+    card.hidden = card.dataset.watch !== select?.value;
+  });
+  select?.addEventListener("change", update);
+  update();
+</script>
+<style>
+  .watch-picker { max-width: 920px; }
+  label { display: block; font-weight: 600; margin-bottom: .6rem; }
+  select { display: block; width: 100%; max-width: 100%; background: var(--ground-soft); color: var(--ink); border: 1px solid var(--line); border-radius: 8px; font: inherit; padding: .9rem 2.4rem .9rem 1rem; text-overflow: ellipsis; }
+  .feature-card { margin-top: 1.5rem; padding: clamp(20px, 3vw, 36px); background: var(--ground-raised); border: 1px solid var(--line); border-radius: 12px; }
+  .feature-card[hidden] { display: none; }
+  .feature-card h2 { font-family: var(--text); font-size: clamp(24px, 4vw, 32px); line-height: 1.25; margin: .4rem 0 1.5rem; overflow-wrap: anywhere; }
+  .watch-feature-list { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem 2rem; margin: 0; }
+  .watch-feature-list div { border-top: 1px solid var(--line); padding-top: .9rem; }
+  dt { color: var(--ink-soft); font-size: 16px; }
+  dd { margin: .35rem 0 0; font-weight: 600; }
+  .feature-note { color: var(--ink-soft); font-size: 16px; margin-top: 1.7rem; }
+  .all-models { border-top: 1px solid var(--line); margin: 2rem 0 5rem; padding-top: 1.5rem; }
+  summary { cursor: pointer; font-size: 22px; font-weight: 600; }
+  .table-scroll { overflow-x: auto; max-width: 100%; margin-top: 1rem; }
+  table { width: 100%; min-width: 760px; border-collapse: collapse; font-size: 16px; }
+  caption { text-align: left; margin-bottom: 1rem; color: var(--ink-soft); }
+  th, td { padding: .9rem .7rem; border-bottom: 1px solid var(--line); text-align: left; }
+  thead th { color: var(--brass); }
+  tbody th { font-weight: 500; min-width: 220px; }
+  @media(max-width: 600px) { .watch-feature-list { grid-template-columns: 1fr; } }
+</style>
