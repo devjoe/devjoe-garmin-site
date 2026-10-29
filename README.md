@@ -41,6 +41,9 @@ raw prompts, private evidence, account data, or supporter messages.
   Hero and images 1–4 remain the same approved artwork.
 - Validate the model selector and mobile table overflow, preserve old release
   notes, and keep account/device/error reports out of this public repository.
+- Test interactivity with the `public/_headers` Content Security Policy applied.
+  Astro must emit external script/style files; an unconfigured local static
+  server does not reproduce the production CSP.
 
 ## License
 
