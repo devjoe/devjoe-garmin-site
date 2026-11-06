@@ -1,6 +1,6 @@
 {
-  "version": "1.13.0",
-  "updated": "2026-10-29",
+  "version": "1.13.1",
+  "updated": "2026-11-06",
   "devices": [
     {
       "id": "fr970",
@@ -908,6 +908,110 @@
         "weatherChinese": true,
         "swim": true,
         "wind": true,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "approachs50",
+      "name": "Approach S50",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "descentg2",
+      "name": "Descent G2",
+      "display": "AMOLED",
+      "displayProfile": "round-390x390",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "d2mach1",
+      "name": "D2 Mach 1",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": true,
+        "touch": true
+      }
+    },
+    {
+      "id": "d2airx10",
+      "name": "D2 Air X10",
+      "display": "AMOLED",
+      "displayProfile": "round-416x416",
+      "features": {
+        "weatherChinese": true,
+        "swim": false,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix7s",
+      "name": "fēnix 7S",
+      "display": "MIP",
+      "displayProfile": "round-240x240",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix7spro",
+      "name": "fēnix 7S Pro",
+      "display": "MIP",
+      "displayProfile": "round-240x240",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": true,
+        "outdoorBrief": false,
+        "touch": true
+      }
+    },
+    {
+      "id": "fenix6xpro",
+      "name": "fēnix 6X Pro / Sapphire / Solar, tactix Delta, quatix 6X",
+      "display": "MIP",
+      "displayProfile": "round-280x280",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": false,
+        "outdoorBrief": false,
+        "touch": false
+      }
+    },
+    {
+      "id": "enduro",
+      "name": "Enduro",
+      "display": "MIP",
+      "displayProfile": "round-280x280",
+      "features": {
+        "weatherChinese": true,
+        "swim": true,
+        "wind": false,
         "outdoorBrief": false,
         "touch": false
       }
