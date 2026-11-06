@@ -1,8 +1,15 @@
 {
-  "version": "1.13.0",
-  "published": "2026-10-29",
+  "version": "1.13.1",
+  "published": "2026-11-06",
   "description": "Time first, Weather ahead, at a glance.\nA clean face, with room for what matters to you.\n\nAll features are free. Your support is welcome.\nhttps://ko-fi.com/devjoe (Anywhere)\nhttps://garmin.devjoe.app/tw-tip (Taiwan)\n\n• A forecast that automatically switches between temperature and precipitation chance.\nTip: On supported touch watches, long-press the lower-left forecast to switch back to temperature when rain chance is shown.\n\nAMOLED adds Weather Signals, Outdoor Brief and multiple Always-On Display styles. The temperature outlook covers 6 hours; precipitation adjusts to 3, 6 or 9 hours. Widgets, Weather Signals and Outdoor Brief are hidden in Always-On Display.\n\nMIP uses dedicated layouts and a three-value, 3-hour outlook. Selected MIP watches also offer optional strong-wind signals with wind direction.\n\n• English or Traditional Chinese weather and weekdays on supported watches. English is the default.\n\nCount down to your next adventure. Keep track of days together. Keep someone far away a little closer. Add a Widget—or leave the space clear.\n\n• Four Widget styles: Countdown, Days since, Analog and Digital second time zones. Choose separately for day and night.\nWidget names support English letters and selected symbols.\nTip: On supported touch watches, enable \"Hold Widget to show / hide\" in settings, then long-press the left Widget area. Long-press the same area to show it again.\n\n• Two customizable data fields for steps, distance, weekly run/ride totals and more. Weekly swim distance is available on supported watches, using activities saved on the watch.\n• Four color themes, with separate day and night choices.\n• A compact status rail for alarms, Do Not Disturb and notifications.\n\nWeather and some readings depend on Garmin data and device setup. Unavailable readings show --.\n\nSupport and FAQ:\nhttps://garmin.devjoe.app/burnished-sky-ahead/support/",
   "whatsNew": [
+    {
+      "title": "1.13.1",
+      "paragraphs": [
+        "Now supports Approach S50, Descent G2, D2 Mach 1, D2 Air X10, fēnix 7S / 7S Pro, the fēnix 6X Pro family and Enduro.",
+        "Fixed incomplete Traditional Chinese weekdays on Forerunner 245 Music, 255S and 255S Music."
+      ]
+    },
     {
       "title": "1.13.0 — Wind direction & more ways to track your week",
       "paragraphs": [

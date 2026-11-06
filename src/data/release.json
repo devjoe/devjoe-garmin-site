@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-10-29T15:20:00.000Z",
+  "generatedAt": "2026-11-06T10:22:23.891Z",
   "publisher": "devjoe",
   "product": {
     "slug": "burnished-sky-ahead",
     "name": "Burnished Sky Ahead",
     "shortName": "Sky Ahead",
-    "version": "1.13.0",
+    "version": "1.13.1",
     "category": "Watch Face",
     "openingSentence": "Time first, Weather ahead, at a glance.",
     "launchLanguages": [
@@ -16,10 +16,11 @@
   "release": {
     "stage": "production",
     "changelog": {
-      "version": "1.13.0",
+      "version": "1.13.1",
       "status": "released",
       "summary": [
-        "Strong-wind Weather Signals now show wind direction, with support expanded to selected MIP watches. Weekly swim distance is available on more compatible watches, and MIP digital Widget digits are clearer."
+        "Now supports Approach S50, Descent G2, D2 Mach 1, D2 Air X10, fēnix 7S / 7S Pro, the fēnix 6X Pro family and Enduro.",
+        "Fixed incomplete Traditional Chinese weekdays on Forerunner 245 Music, 255S and 255S Music."
       ]
     }
   },
@@ -450,6 +451,54 @@
       "id": "fr255sm",
       "name": "Forerunner 255S Music",
       "displayProfile": "round-218x218",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "approachs50",
+      "name": "Approach S50",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "descentg2",
+      "name": "Descent G2",
+      "displayProfile": "round-390x390",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "d2mach1",
+      "name": "D2 Mach 1",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "d2airx10",
+      "name": "D2 Air X10",
+      "displayProfile": "round-416x416",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "fenix7s",
+      "name": "fēnix 7S",
+      "displayProfile": "round-240x240",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "fenix7spro",
+      "name": "fēnix 7S Pro",
+      "displayProfile": "round-240x240",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "fenix6xpro",
+      "name": "fēnix 6X Pro / Sapphire / Solar, tactix Delta, quatix 6X",
+      "displayProfile": "round-280x280",
+      "evidence": "Simulator validated; physical evidence varies by model"
+    },
+    {
+      "id": "enduro",
+      "name": "Enduro",
+      "displayProfile": "round-280x280",
       "evidence": "Simulator validated; physical evidence varies by model"
     }
   ],
